@@ -1,9 +1,9 @@
-# Kapgemini
+# Kareer
 
 To use this project, you need:
 - [Node.js](https://nodejs.org/en/) installed on your machine.
 - [Angular CLI 13](https://cli.angular.io/) installed on your machine.
-- [Kapgemini-backend](https://github.com/Mino1289/Kapgemini-backend) running locally on your machine.
+- [Kareer-backend](https://github.com/Mino1289/Kareer-backend) running locally on your machine.
 
 ## Running the project
 

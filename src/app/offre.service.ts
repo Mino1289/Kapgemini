@@ -7,7 +7,7 @@ import { Offre } from 'src/models/Offre';
   providedIn: 'root'
 })
 export class OffreService {
-  private offreUrl = "http://localhost/Kapgemini-backend/offre.php";
+  private offreUrl = "http://localhost/Kareer-backend/offre.php";
   offreList: Offre[] = [];
   constructor(private http: HttpClient) { }
 
