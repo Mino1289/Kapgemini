@@ -1,5 +1,6 @@
 export class Offre {
-    constructor(public ID: number,
+    constructor(
+        public ID: number,
         public titre: string,
         public contrat: string,
         public emplacement: string,
