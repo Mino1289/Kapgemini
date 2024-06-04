@@ -9,6 +9,8 @@ import { OffreComponent } from './offre/offre.component';
 import { OffreListComponent } from './offre-list/offre-list.component';
 import { OffreFullComponent } from './offre-full/offre-full.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     OffreComponent,
     OffreListComponent,
     OffreFullComponent,
-    HomeComponent
+    HomeComponent,
+    UserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
