@@ -134,6 +134,51 @@
       "password": "E4j0mN5oO6",
       "profil_picture": "http://randomuser.me/api/portraits/women/15.jpg",
       "isRecruteur": 1
+  },
+  {
+    "ID_user": 16,
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "email": "jean.dupont@gmail.com",
+    "password": "A1b2C3d4E5",
+    "profil_picture": "http://randomuser.me/api/portraits/men/16.jpg",
+    "isRecruteur": 0
+  },
+  {
+    "ID_user": 17,
+    "nom": "Martin",
+    "prenom": "Marie",
+    "email": "marie.martin@gmail.com",
+    "password": "F6g7H8i9J0",
+    "profil_picture": "http://randomuser.me/api/portraits/women/17.jpg",
+    "isRecruteur": 1
+  },
+  {
+    "ID_user": 18,
+    "nom": "Bernard",
+    "prenom": "Pierre",
+    "email": "pierre.bernard@gmail.com",
+    "password": "K1l2M3n4O5",
+    "profil_picture": "http://randomuser.me/api/portraits/men/18.jpg",
+    "isRecruteur": 0
+  },
+  {
+    "ID_user": 19,
+    "nom": "Leroy",
+    "prenom": "Julie",
+    "email": "julie.leroy@gmail.com",
+    "password": "P6q7R8s9T0",
+    "profil_picture": "http://randomuser.me/api/portraits/women/19.jpg",
+    "isRecruteur": 1
+  },
+  {
+    "ID_user": 20,
+    "nom": "Moreau",
+    "prenom": "Luc",
+    "email": "luc.moreau@gmail.com",
+    "password": "U1v2W3x4Y5",
+    "profil_picture": "http://randomuser.me/api/portraits/men/20.jpg",
+    "isRecruteur": 0
   }
 
   ],
@@ -230,6 +275,7 @@
       "marque": "Lesage",
       "apply_url": "https://lesage.com/apply/1",
       "date": "2024-06-04",
+      "recruteur_ID": 11,
       "ID_entreprise": 1
     },
     {
@@ -240,6 +286,7 @@
       "marque": "Humbert",
       "apply_url": "https://humbert.com/apply/2",
       "date": "2024-06-04",
+      "recruteur_ID": 12,
       "ID_entreprise": 2
     },
     {
@@ -250,6 +297,7 @@
       "marque": "Pires",
       "apply_url": "https://pires.com/apply/3",
       "date": "2024-06-03",
+      "recruteur_ID": 13,
       "ID_entreprise": 3
     },
     {
@@ -260,6 +308,7 @@
       "marque": "Payet Rolland SARL",
       "apply_url": "https://payetrolland.com/apply/4",
       "date": "2024-06-03",
+      "recruteur_ID": 14,
       "ID_entreprise": 4
     },
     {
@@ -270,6 +319,7 @@
       "marque": "Ollivier",
       "apply_url": "https://ollivier.com/apply/5",
       "date": "2024-06-02",
+      "recruteur_ID": 15,
       "ID_entreprise": 5
     },
     {
@@ -280,6 +330,7 @@
       "marque": "Chauveau",
       "apply_url": "https://chauveau.com/apply/6",
       "date": "2024-06-02",
+      "recruteur_ID": 16,
       "ID_entreprise": 6
     },
     {
@@ -290,6 +341,7 @@
       "marque": "Joly Hernandez S.A.R.L.",
       "apply_url": "https://jolyhernandez.com/apply/7",
       "date": "2024-06-01",
+      "recruteur_ID": 17,
       "ID_entreprise": 7
     },
     {
@@ -300,6 +352,7 @@
       "marque": "Lemoine SA",
       "apply_url": "https://lemoine.com/apply/8",
       "date": "2024-06-01",
+      "recruteur_ID": 18,
       "ID_entreprise": 8
     },
     {
@@ -310,6 +363,7 @@
       "marque": "Dupuy Gaillard S.A.R.L.",
       "apply_url": "https://dupuygaillard.com/apply/9",
       "date": "2024-06-04",
+      "recruteur_ID": 19,
       "ID_entreprise": 9
     },
     {
@@ -320,6 +374,7 @@
       "marque": "Turpin",
       "apply_url": "https://turpin.com/apply/10",
       "date": "2024-06-03",
+      "recruteur_ID": 20,
       "ID_entreprise": 10
     }
   ],
@@ -329,36 +384,31 @@
       "ID_candidature": 1,
       "candidat_ID": 3,
       "offre_ID": 2,
-      "date": "2024-06-04",
-      "recruteur_ID": 11
+      "date": "2024-06-04"
     },
     {
       "ID_candidature": 2,
       "candidat_ID": 7,
       "offre_ID": 4,
-      "date": "2024-06-04",
-      "recruteur_ID": 12
+      "date": "2024-06-04"
     },
     {
       "ID_candidature": 3,
       "candidat_ID": 1,
       "offre_ID": 5,
-      "date": "2024-06-03",
-      "recruteur_ID": 13
+      "date": "2024-06-03"
     },
     {
       "ID_candidature": 4,
       "candidat_ID": 10,
       "offre_ID": 8,
-      "date": "2024-06-03",
-      "recruteur_ID": 14
+      "date": "2024-06-03"
     },
     {
       "ID_candidature": 5,
       "candidat_ID": 6,
       "offre_ID": 10,
-      "date": "2024-06-02",
-      "recruteur_ID": 15
+      "date": "2024-06-02"
     }
   ]
   

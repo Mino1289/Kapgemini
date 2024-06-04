@@ -3,5 +3,4 @@ export interface Candidature{
     candidat_ID: number,
     offre_ID:number,
     date: string,
-    recruteur_ID:number
 }

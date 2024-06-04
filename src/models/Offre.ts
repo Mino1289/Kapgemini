@@ -6,5 +6,6 @@ export interface Offre {
    marque: string,
    apply_url: string,
    date: string,
+   recruteur_ID:number,
    ID_entreprise: string
 }
