@@ -16,8 +16,10 @@ export class CandidatureService {
     return this.http.get<Candidature[]>('http://localhost:3000/candidatures');
   }
 
-  getUserByIndex(index : number): Candidature{
-    this.http.get<Candidature>('http://localhost:3000/candidatures/'+index).subscribe(data => {this.candidature = data});
+  getCandidatureByIndex(index : number): Candidature{
+    this.http.get<Candidature[]>('http://localhost:3000/candidatures/?ID_candidature='+index).subscribe(data => {
+      this.candidature = data[0];
+    });
     return this.candidature;
   }
   

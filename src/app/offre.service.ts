@@ -7,8 +7,7 @@ import { Offre } from 'src/models/Offre';
   providedIn: 'root'
 })
 export class OffreService {
-
-  offre!:Offre;
+  offre!: Offre;
 
   constructor(private http: HttpClient) { }
 
@@ -17,7 +16,9 @@ export class OffreService {
   }
 
   getOffreById(id: number): Offre {
-    this.http.get<Offre>('http://localhost:3000/offres/'+id).subscribe(data=>{this.offre = data});
+    this.http.get<Offre[]>('http://localhost:3000/offres/?ID_offre=' + id).subscribe(data => { 
+      this.offre = data[0];
+    });
     return this.offre;
   }
 }

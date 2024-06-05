@@ -8,16 +8,18 @@ import { Entreprise } from 'src/models/Entreprise';
 })
 export class EntrepriseService {
 
-  entreprise!:Entreprise;
+  entreprise!: Entreprise;
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getEntreprises() : Observable<Entreprise[]>{
+  getEntreprises(): Observable<Entreprise[]> {
     return this.http.get<Entreprise[]>('http://localhost:3000/entreprises');
   }
 
-  getEntrepriseByIndex(index: number) : Entreprise{
-    this.http.get<Entreprise>('http://localhost:3000/entreprises/'+index).subscribe(data=>{this.entreprise =data})
+  getEntrepriseByIndex(index: number): Entreprise {
+    this.http.get<Entreprise[]>('http://localhost:3000/entreprises/?ID_entreprise=' + index).subscribe(data => {
+      this.entreprise = data[0]
+    })
     return this.entreprise
   }
 }

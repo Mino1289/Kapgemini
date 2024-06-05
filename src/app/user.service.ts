@@ -16,7 +16,9 @@ export class UserService {
     }
 
     getUserByIndex(index : number): User{
-      this.http.get<User>('http://localhost:3000/users/'+index).subscribe(data => {this.user = data});
+      this.http.get<User[]>('http://localhost:3000/users/?ID_user='+index).subscribe(data => {
+        this.user = data[0];
+      });
       return this.user;
     }
   
