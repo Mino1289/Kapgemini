@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Offre } from 'src/models/Offre';
@@ -7,22 +7,17 @@ import { Offre } from 'src/models/Offre';
   providedIn: 'root'
 })
 export class OffreService {
-  private offreUrl = "http://localhost/Kareer-backend/offre.php";
-  offreList: Offre[] = [];
+
+  offre!:Offre;
+
   constructor(private http: HttpClient) { }
 
-  getOffres(offset: number): Offre[] {
-
-    // Add safe, URL encoded search parameter if there is a search term
-    const options = { params: new HttpParams({ fromString: `offset=${offset}` }) };
-    this.http.get(this.offreUrl, options).subscribe((data: any) => {
-      this.offreList = data.data;
-    });
-
-    return this.offreList;
+  getOffres(): Observable<Offre[]> {
+    return this.http.get<Offre[]>('http://localhost:3000/offres')
   }
 
-  getOffreById(id: number) {
-    return this.offreList.find(offre => offre.ID === id);
+  getOffreById(id: number): Offre {
+    this.http.get<Offre>('http://localhost:3000/offres/'+id).subscribe(data=>{this.offre = data});
+    return this.offre;
   }
 }

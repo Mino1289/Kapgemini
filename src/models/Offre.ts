@@ -1,18 +1,11 @@
-export class Offre {
-    constructor(public ID: number,
-        public titre: string,
-        public contrat: string,
-        public emplacement: string,
-        public marque: string,
-        public apply_url: string,
-        public date: Date,
-    ) {
-        this.ID = ID;
-        this.titre = titre;
-        this.contrat = contrat;
-        this.emplacement = emplacement;
-        this.marque = marque;
-        this.apply_url = apply_url;
-        this.date = date;        
-    }
+export interface Offre {
+   ID_offre : number,
+   titre : string,
+   contrat: string,
+   emplacement : string,
+   marque: string,
+   apply_url: string,
+   date: string,
+   recruteur_ID:number,
+   ID_entreprise: string
 }

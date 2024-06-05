@@ -8,9 +8,11 @@ import { OffreService } from '../offre.service';
   styleUrls: ['./offre-list.component.css']
 })
 export class OffreListComponent implements OnInit {
+
   offres: Offre[] = [];
+  
   constructor(private offreService: OffreService) {
-    this.offres = this.offreService.getOffres(0);
+    this.offreService.getOffres().subscribe(data=>{this.offres = data});
   }
 
   ngOnInit(): void {

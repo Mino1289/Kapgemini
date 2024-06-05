@@ -16,6 +16,6 @@ export class OffreComponent implements OnInit {
   }
   
   readMore() {
-    this.router.navigate(['/','offre', this.offre.ID]);
+    this.router.navigate(['/','offre', this.offre.ID_offre]);
   }
 }
