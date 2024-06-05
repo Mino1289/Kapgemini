@@ -22,5 +22,9 @@ export class CandidatureService {
     });
     return this.candidature;
   }
+
+  postCandidature(candidature: Candidature): void {
+    this.http.post('http://localhost:3000/candidatures', candidature)
+  }
   
 }

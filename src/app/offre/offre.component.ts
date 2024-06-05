@@ -18,4 +18,8 @@ export class OffreComponent implements OnInit {
   readMore() {
     this.router.navigate(['/','offre', this.offre.ID_offre]);
   }
+
+  apply() {
+    this.router.navigate(['/','candidature', this.offre.ID_offre])
+  }
 }
