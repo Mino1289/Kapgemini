@@ -1,0 +1,16 @@
+.profile_picture{
+    width: 60%; 
+    margin: auto;
+    margin-top: 20px;
+}
+
+.textUser{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.type, .contact{
+    margin-top: 5px;
+    text-align: center;
+}

@@ -1,6 +1,14 @@
-<div class="card" style="width: 18rem;">
-    <img src="{{user.profil_picture}}" class="card-img-top rounded-pill" alt="...">
+<div class="card" style="width: 18rem; height: 100%;" >
+    <img src="{{user.profil_picture}}" class="card-img-top rounded-pill profile_picture" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{user.nom}} {{user.prenom}}</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item textUser">{{user.nom}} {{user.prenom}}</li>
+        <li class="list-group-item type" *ngIf="user.isRecruteur == 1; else notRecruteur" style="text-align: center">Recruteur</li>
+        <ng-template #notRecruteur>
+          <li class="list-group-item type">Candidat</li>
+        </ng-template>
+        <li class="list-group-item contact"><a href=mailto:{{user.email}}>Contact</a></li>
+      </ul>
+      
     </div>
   </div>
