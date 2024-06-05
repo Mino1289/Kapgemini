@@ -22,4 +22,8 @@ export class EntrepriseService {
     })
     return this.entreprise
   }
+
+  get5LastEntreprises(): Observable<Entreprise[]> {
+    return this.http.get<Entreprise[]>('http://localhost:3000/entreprises?_sort=ID_offre&_order=desc&_limit=5');
+  }
 }

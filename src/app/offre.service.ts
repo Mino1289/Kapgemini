@@ -12,7 +12,7 @@ export class OffreService {
   constructor(private http: HttpClient) { }
 
   getOffres(): Observable<Offre[]> {
-    return this.http.get<Offre[]>('http://localhost:3000/offres')
+    return this.http.get<Offre[]>('http://localhost:3000/offres');
   }
 
   getOffreById(id: number): Offre {
@@ -20,5 +20,9 @@ export class OffreService {
       this.offre = data[0];
     });
     return this.offre;
+  }
+
+  getLastOffre(): Observable<Offre[]> {
+    return this.http.get<Offre[]>('http://localhost:3000/offres?_sort=ID_offre&_order=desc&_limit=1');
   }
 }
