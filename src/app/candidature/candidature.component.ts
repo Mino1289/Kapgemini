@@ -11,13 +11,11 @@ import { Offre } from 'src/models/Offre';
   styleUrls: ['./candidature.component.css']
 })
 export class CandidatureComponent implements OnInit {
-  offreIdx!: number;
   offre!: Offre;
   candidature!: Candidature;
 
   constructor(private activatedRoute: ActivatedRoute, private candidatureService: CandidatureService, offreService: OffreService) {
-    this.offreIdx = parseInt(activatedRoute.snapshot.paramMap.get('id') || '0');
-    this.offre = offreService.getOffreById(this.offreIdx);
+    offreService.getOffreById(parseInt(activatedRoute.snapshot.paramMap.get('id') || '0')).forEach(offre => this.offre = offre);
   }
 
   ngOnInit(): void {

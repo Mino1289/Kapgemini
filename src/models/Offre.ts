@@ -1,6 +1,6 @@
 export class Offre {
    constructor(
-      public ID_offre: number,
+      public id: number,
       public titre: string,
       public contrat: string,
       public emplacement: string,
@@ -8,9 +8,9 @@ export class Offre {
       public description: string,
       public date: string,
       public recruteur_ID: number,
-      public ID_entreprise: string
+      public ID_entreprise: number
    ) {
-      this.ID_offre = ID_offre;
+      this.id = id;
       this.titre = titre;
       this.contrat = contrat;
       this.emplacement = emplacement;

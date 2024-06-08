@@ -1,14 +1,14 @@
 export class User {
     constructor(
-        public ID_user: number,
+        public id: number,
         public nom: string,
         public prenom: string,
         public email: string,
         public password: string,
         public profil_picture: string,
-        public isRecruteur: number
+        public isRecruteur: boolean
     ) {
-        this.ID_user = ID_user;
+        this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;

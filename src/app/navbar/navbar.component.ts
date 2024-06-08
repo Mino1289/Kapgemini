@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SessionService } from '../session.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  isAuth: boolean = this.sessionService.isAuthenticated();
+  
+  constructor(private sessionService: SessionService) { }
 
   ngOnInit(): void {
   }

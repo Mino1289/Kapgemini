@@ -9,20 +9,17 @@ import { OffreService } from '../offre.service';
   styleUrls: ['./offre-full.component.css']
 })
 export class OffreFullComponent implements OnInit {
-  offre: Offre;
-  offreIdx: number;
+  offre: Offre = new Offre(0, '', '', '', '', '', '', 0, 0);
 
   constructor(private router: Router, activatedRoute: ActivatedRoute, offreService: OffreService) {
-
-    this.offreIdx = parseInt(activatedRoute.snapshot.paramMap.get('id') || '0');
-    this.offre = offreService.getOffreById(this.offreIdx);
+    offreService.getOffreById(parseInt(activatedRoute.snapshot.paramMap.get('id') || '0')).forEach(offre => this.offre = offre);
   }
 
   ngOnInit(): void {
   }
 
   apply() {
-    this.router.navigate(['/','candidature', this.offre.ID_offre])
+    this.router.navigate(['/','candidature', this.offre.id])
   }
 
 }

@@ -7,22 +7,20 @@ import { Offre } from 'src/models/Offre';
   providedIn: 'root'
 })
 export class OffreService {
-  offre!: Offre;
+  private apiURL = 'http://localhost:3000/offres';
+  offre: Offre = new Offre(0, '', '', '', '', '', '', 0, 0);
 
   constructor(private http: HttpClient) { }
 
   getOffres(): Observable<Offre[]> {
-    return this.http.get<Offre[]>('http://localhost:3000/offres');
+    return this.http.get<Offre[]>(this.apiURL);
   }
 
-  getOffreById(id: number): Offre {
-    this.http.get<Offre[]>('http://localhost:3000/offres/?ID_offre=' + id).subscribe(data => { 
-      this.offre = data[0];
-    });
-    return this.offre;
+  getOffreById(id: number): Observable<Offre> {
+    return this.http.get<Offre>(`${this.apiURL}/${id}`);
   }
 
-  getLastOffre(): Observable<Offre[]> {
-    return this.http.get<Offre[]>('http://localhost:3000/offres?_sort=ID_offre&_order=desc&_limit=1');
+  getNLastOffre(n: number): Observable<Offre[]> {
+    return this.http.get<Offre[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=${n}`);
   }
 }

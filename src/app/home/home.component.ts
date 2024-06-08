@@ -8,15 +8,15 @@ import { Offre } from 'src/models/Offre';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  lastOffre!: Offre;
+  lastOffre: Offre = new Offre(0, '', '', '', '', '', '', 0, 0);
 
-  constructor(offreService: OffreService) {
-    offreService.getLastOffre().subscribe(data => {
-      this.lastOffre = data[0];
-    });
+  constructor(private offreService: OffreService) {
   }
 
   ngOnInit(): void {
+    this.offreService.getNLastOffre(1).subscribe(data => {
+      this.lastOffre = data[0];
+    });
   }
 
 }

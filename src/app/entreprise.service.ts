@@ -7,23 +7,24 @@ import { Entreprise } from 'src/models/Entreprise';
   providedIn: 'root'
 })
 export class EntrepriseService {
+  private apiURL = 'http://localhost:3000/entreprises';
 
   entreprise!: Entreprise;
 
   constructor(private http: HttpClient) { }
 
   getEntreprises(): Observable<Entreprise[]> {
-    return this.http.get<Entreprise[]>('http://localhost:3000/entreprises');
+    return this.http.get<Entreprise[]>(this.apiURL);
   }
 
   getEntrepriseByIndex(index: number): Entreprise {
-    this.http.get<Entreprise[]>('http://localhost:3000/entreprises/?ID_entreprise=' + index).subscribe(data => {
+    this.http.get<Entreprise[]>(`${this.apiURL}/${index}`).subscribe(data => {
       this.entreprise = data[0]
     })
     return this.entreprise
   }
 
   get5LastEntreprises(): Observable<Entreprise[]> {
-    return this.http.get<Entreprise[]>('http://localhost:3000/entreprises?_sort=ID_offre&_order=desc&_limit=5');
+    return this.http.get<Entreprise[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=5`);
   }
 }

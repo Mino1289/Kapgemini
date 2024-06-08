@@ -1,189 +1,198 @@
 {
   "users": [
     {
-      "ID_user": 1,
+      "id": 1,
       "nom": "Pineau",
       "prenom": "Charles",
       "email": "charles.pineau@gmail.com",
       "password": "_0EN#jHr3$",
       "profil_picture": "http://randomuser.me/api/portraits/women/1.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 2,
+      "id": 2,
       "nom": "Gautier",
       "prenom": "Alain",
       "email": "alain.gautier@gmail.com",
       "password": "ZQ&80EYrTj",
       "profil_picture": "http://randomuser.me/api/portraits/men/2.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 3,
+      "id": 3,
       "nom": "Chartier",
       "prenom": "Raymond",
       "email": "raymond.chartier@gmail.com",
       "password": "*M6Gmv#GX_",
       "profil_picture": "http://randomuser.me/api/portraits/women/3.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 4,
+      "id": 4,
       "nom": "Klein",
       "prenom": "Jean",
       "email": "jean.klein@gmail.com",
       "password": "Aw3XRvlTX+",
       "profil_picture": "http://randomuser.me/api/portraits/men/4.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 5,
+      "id": 5,
       "nom": "Vincent",
       "prenom": "Nicole",
       "email": "nicole.vincent@gmail.com",
       "password": "!6xQaod9CT",
       "profil_picture": "http://randomuser.me/api/portraits/women/9.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 6,
+      "id": 6,
       "nom": "Rolland",
       "prenom": "Benjamin",
       "email": "benjamin.rolland@gmail.com",
       "password": "b_3GvMAoSg",
       "profil_picture": "http://randomuser.me/api/portraits/men/10.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 7,
+      "id": 7,
       "nom": "Morel",
       "prenom": "Lorraine",
       "email": "lorraine.morel@gmail.com",
       "password": "!8PLTjOR1B",
       "profil_picture": "http://randomuser.me/api/portraits/women/11.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 8,
+      "id": 8,
       "nom": "Fouquet",
       "prenom": "Olivie",
       "email": "olivie.fouquet@gmail.com",
       "password": "e!Pj*t1sRE",
       "profil_picture": "http://randomuser.me/api/portraits/men/12.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 9,
+      "id": 9,
       "nom": "Laporte",
-      "prenom": "St\u00e9phane",
-      "email": "st\u00e9phane.laporte@gmail.com",
+      "prenom": "Stéphane",
+      "email": "stéphane.laporte@gmail.com",
       "password": "(#FLJX^dx3",
       "profil_picture": "http://randomuser.me/api/portraits/women/13.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 10,
+      "id": 10,
       "nom": "Roux",
       "prenom": "Denis",
       "email": "denis.roux@gmail.com",
       "password": "_qk97RnRx3",
       "profil_picture": "http://randomuser.me/api/portraits/men/14.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 11,
+      "id": 11,
       "nom": "Dupont",
       "prenom": "Marie",
       "email": "marie.dupont@gmail.com",
       "password": "A8f9lK2sP0",
       "profil_picture": "http://randomuser.me/api/portraits/women/11.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 12,
+      "id": 12,
       "nom": "Martin",
       "prenom": "Jean",
       "email": "jean.martin@gmail.com",
       "password": "B7g3iJ1mQ2",
       "profil_picture": "http://randomuser.me/api/portraits/men/12.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 13,
+      "id": 13,
       "nom": "Bernard",
       "prenom": "Lucie",
       "email": "lucie.bernard@gmail.com",
       "password": "C6h2jK3nL4",
       "profil_picture": "http://randomuser.me/api/portraits/women/13.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 14,
+      "id": 14,
       "nom": "Dubois",
       "prenom": "Pierre",
       "email": "pierre.dubois@gmail.com",
       "password": "D5i1kL4mN5",
       "profil_picture": "http://randomuser.me/api/portraits/men/14.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 15,
+      "id": 15,
       "nom": "Lefevre",
       "prenom": "Sophie",
       "email": "sophie.lefevre@gmail.com",
       "password": "E4j0mN5oO6",
       "profil_picture": "http://randomuser.me/api/portraits/women/15.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 16,
+      "id": 16,
       "nom": "Dupont",
       "prenom": "Jean",
       "email": "jean.dupont@gmail.com",
       "password": "A1b2C3d4E5",
       "profil_picture": "http://randomuser.me/api/portraits/men/16.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 17,
+      "id": 17,
       "nom": "Martin",
       "prenom": "Marie",
       "email": "marie.martin@gmail.com",
       "password": "F6g7H8i9J0",
       "profil_picture": "http://randomuser.me/api/portraits/women/17.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 18,
+      "id": 18,
       "nom": "Bernard",
       "prenom": "Pierre",
       "email": "pierre.bernard@gmail.com",
       "password": "K1l2M3n4O5",
       "profil_picture": "http://randomuser.me/api/portraits/men/18.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
     },
     {
-      "ID_user": 19,
+      "id": 19,
       "nom": "Leroy",
       "prenom": "Julie",
       "email": "julie.leroy@gmail.com",
       "password": "P6q7R8s9T0",
       "profil_picture": "http://randomuser.me/api/portraits/women/19.jpg",
-      "isRecruteur": 1
+      "isRecruteur": true
     },
     {
-      "ID_user": 20,
+      "id": 20,
       "nom": "Moreau",
       "prenom": "Luc",
       "email": "luc.moreau@gmail.com",
       "password": "U1v2W3x4Y5",
       "profil_picture": "http://randomuser.me/api/portraits/men/20.jpg",
-      "isRecruteur": 0
+      "isRecruteur": false
+    },
+    {
+      "id": 21,
+      "nom": "k",
+      "prenom": "v",
+      "email": "v.k@sfr.fr",
+      "password": "test",
+      "profil_picture": "",
+      "isRecruteur": false
     }
   ],
   "entreprises": [
     {
-      "ID_entreprise": 1,
+      "id": 1,
       "nom": "Lesage",
       "address": "2, chemin Paul Bouvet\n87493 Ruiz",
       "nombre_employe": 96,
@@ -191,31 +200,31 @@
       "domaine": "Environnement"
     },
     {
-      "ID_entreprise": 2,
+      "id": 2,
       "nom": "Humbert",
-      "address": "44, rue C\u00e9lina Gallet\n30188 Saint Pierredan",
+      "address": "44, rue Célina Gallet\n30188 Saint Pierredan",
       "nombre_employe": 773,
       "country": "France",
       "domaine": "Ressources Humaines"
     },
     {
-      "ID_entreprise": 3,
+      "id": 3,
       "nom": "Pires",
-      "address": "58, boulevard Maillard\n62603 Chr\u00e9tien",
+      "address": "58, boulevard Maillard\n62603 Chrétien",
       "nombre_employe": 890,
       "country": "France",
-      "domaine": "Recherche et D\u00e9veloppement"
+      "domaine": "Recherche et Développement"
     },
     {
-      "ID_entreprise": 4,
+      "id": 4,
       "nom": "Payet Rolland SARL",
       "address": "78, rue Gilbert Michel\n25576 Merlenec",
       "nombre_employe": 645,
       "country": "France",
-      "domaine": "S\u00e9curit\u00e9"
+      "domaine": "Sécurité"
     },
     {
-      "ID_entreprise": 5,
+      "id": 5,
       "nom": "Ollivier",
       "address": "553, rue Lacroix\n11590 Parent",
       "nombre_employe": 724,
@@ -223,7 +232,7 @@
       "domaine": "Achat"
     },
     {
-      "ID_entreprise": 6,
+      "id": 6,
       "nom": "Chauveau",
       "address": "91, boulevard Mathieu\n75177 Bergernec",
       "nombre_employe": 208,
@@ -231,15 +240,15 @@
       "domaine": "Ressources Humaines"
     },
     {
-      "ID_entreprise": 7,
+      "id": 7,
       "nom": "Joly Hernandez S.A.R.L.",
-      "address": "4, avenue Maryse L\u00e9v\u00eaque\n50718 Perez-sur-Mer",
+      "address": "4, avenue Maryse Lévêque\n50718 Perez-sur-Mer",
       "nombre_employe": 927,
       "country": "France",
       "domaine": "Maintenance"
     },
     {
-      "ID_entreprise": 8,
+      "id": 8,
       "nom": "Lemoine SA",
       "address": "87, rue Besnard\n14826 Thierry-sur-Klein",
       "nombre_employe": 337,
@@ -247,15 +256,15 @@
       "domaine": "Logistique"
     },
     {
-      "ID_entreprise": 9,
+      "id": 9,
       "nom": "Dupuy Gaillard S.A.R.L.",
-      "address": "8, boulevard de Lef\u00e8vre\n63362 Leroux",
+      "address": "8, boulevard de Lefèvre\n63362 Leroux",
       "nombre_employe": 225,
       "country": "France",
       "domaine": "Ressources Humaines"
     },
     {
-      "ID_entreprise": 10,
+      "id": 10,
       "nom": "Turpin",
       "address": "8, chemin Laurent\n67206 Muller",
       "nombre_employe": 164,
@@ -265,7 +274,7 @@
   ],
   "offres": [
     {
-      "ID_offre": 1,
+      "id": 1,
       "titre": "Ingénieur Environnement",
       "contrat": "CDI",
       "emplacement": "Ruiz",
@@ -273,10 +282,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 11,
-      "ID_entreprise": 1
+      "entreprise_ID": 1
     },
     {
-      "ID_offre": 2,
+      "id": 2,
       "titre": "Responsable Ressources Humaines",
       "contrat": "CDI",
       "emplacement": "Saint Pierredan",
@@ -284,10 +293,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 12,
-      "ID_entreprise": 2
+      "entreprise_ID": 2
     },
     {
-      "ID_offre": 3,
+      "id": 3,
       "titre": "Chercheur en IA",
       "contrat": "CDI",
       "emplacement": "Chrétien",
@@ -295,10 +304,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 13,
-      "ID_entreprise": 3
+      "entreprise_ID": 3
     },
     {
-      "ID_offre": 4,
+      "id": 4,
       "titre": "Agent de Sécurité",
       "contrat": "CDD",
       "emplacement": "Merlenec",
@@ -306,10 +315,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 14,
-      "ID_entreprise": 4
+      "entreprise_ID": 4
     },
     {
-      "ID_offre": 5,
+      "id": 5,
       "titre": "Acheteur Industriel",
       "contrat": "CDI",
       "emplacement": "Parent",
@@ -317,10 +326,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-02",
       "recruteur_ID": 15,
-      "ID_entreprise": 5
+      "entreprise_ID": 5
     },
     {
-      "ID_offre": 6,
+      "id": 6,
       "titre": "Assistant Ressources Humaines",
       "contrat": "Stage",
       "emplacement": "Bergernec",
@@ -328,10 +337,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-02",
       "recruteur_ID": 16,
-      "ID_entreprise": 6
+      "entreprise_ID": 6
     },
     {
-      "ID_offre": 7,
+      "id": 7,
       "titre": "Technicien de Maintenance",
       "contrat": "CDI",
       "emplacement": "Perez-sur-Mer",
@@ -339,10 +348,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-01",
       "recruteur_ID": 17,
-      "ID_entreprise": 7
+      "entreprise_ID": 7
     },
     {
-      "ID_offre": 8,
+      "id": 8,
       "titre": "Logisticien",
       "contrat": "CDD",
       "emplacement": "Thierry-sur-Klein",
@@ -350,10 +359,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-01",
       "recruteur_ID": 18,
-      "ID_entreprise": 8
+      "entreprise_ID": 8
     },
     {
-      "ID_offre": 9,
+      "id": 9,
       "titre": "Chargé de Recrutement",
       "contrat": "CDI",
       "emplacement": "Leroux",
@@ -361,10 +370,10 @@
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 19,
-      "ID_entreprise": 9
+      "entreprise_ID": 9
     },
     {
-      "ID_offre": 10,
+      "id": 10,
       "titre": "Responsable Service Client",
       "contrat": "CDI",
       "emplacement": "Muller",
@@ -372,36 +381,36 @@
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 20,
-      "ID_entreprise": 10
+      "entreprise_ID": 10
     }
   ],
   "candidatures": [
     {
-      "ID_candidature": 1,
+      "id": 1,
       "candidat_ID": 3,
       "offre_ID": 2,
       "date": "2024-06-04"
     },
     {
-      "ID_candidature": 2,
+      "id": 2,
       "candidat_ID": 7,
       "offre_ID": 4,
       "date": "2024-06-04"
     },
     {
-      "ID_candidature": 3,
+      "id": 3,
       "candidat_ID": 1,
       "offre_ID": 5,
       "date": "2024-06-03"
     },
     {
-      "ID_candidature": 4,
+      "id": 4,
       "candidat_ID": 10,
       "offre_ID": 8,
       "date": "2024-06-03"
     },
     {
-      "ID_candidature": 5,
+      "id": 5,
       "candidat_ID": 6,
       "offre_ID": 10,
       "date": "2024-06-02"

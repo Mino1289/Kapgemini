@@ -16,10 +16,10 @@ export class OffreComponent implements OnInit {
   }
   
   readMore() {
-    this.router.navigate(['/','offre', this.offre.ID_offre]);
+    this.router.navigate(['/','offre', this.offre.id]);
   }
 
   apply() {
-    this.router.navigate(['/','candidature', this.offre.ID_offre])
+    this.router.navigate(['/','candidature', this.offre.id])
   }
 }

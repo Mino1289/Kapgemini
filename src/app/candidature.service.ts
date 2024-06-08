@@ -7,24 +7,24 @@ import { Candidature } from 'src/models/Candidature';
   providedIn: 'root'
 })
 export class CandidatureService {
-
+  private apiURL = 'http://localhost:3000/candidatures';
   candidature!:Candidature;
 
   constructor(private http : HttpClient) { }
 
   getCandidatures() : Observable<Candidature[]>{
-    return this.http.get<Candidature[]>('http://localhost:3000/candidatures');
+    return this.http.get<Candidature[]>(this.apiURL);
   }
 
   getCandidatureByIndex(index : number): Candidature{
-    this.http.get<Candidature[]>('http://localhost:3000/candidatures/?ID_candidature='+index).subscribe(data => {
+    this.http.get<Candidature[]>(`${this.apiURL}/${index}`).subscribe(data => {
       this.candidature = data[0];
     });
     return this.candidature;
   }
 
   postCandidature(candidature: Candidature): void {
-    this.http.post('http://localhost:3000/candidatures', candidature)
+    this.http.post(this.apiURL, candidature)
   }
   
 }

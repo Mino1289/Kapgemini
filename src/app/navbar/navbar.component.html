@@ -16,11 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/offres">Offres</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/connexion-candidat">Espace Candidat</a>
+                <li class="nav-item" *ngIf="this.isAuth">
+                    <a class="nav-link" routerLink="/connexion">Se connecter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/users">Users</a>
+                    <a class="nav-link" routerLink="/register">Créer un compte</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

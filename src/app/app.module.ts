@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CandidatureComponent } from './candidature/candidature.component';
+import { FormConnexionComponent } from './form-connexion/form-connexion.component';
+import { FormsModule } from '@angular/forms';
+import { FormRegisterComponent } from './form-register/form-register.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { CandidatureComponent } from './candidature/candidature.component';
     HomeComponent,
     UserComponent,
     UserListComponent,
-    CandidatureComponent
+    CandidatureComponent,
+    FormConnexionComponent,
+    FormRegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
