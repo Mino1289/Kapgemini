@@ -1,0 +1,8 @@
+<div class="container">
+    <app-user [user]="this.user" class="m-3"></app-user>
+    <div class="row m-3">
+        <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
+            class="col"></app-candidature-full>
+    </div>
+
+</div>

@@ -17,11 +17,8 @@ export class EntrepriseService {
     return this.http.get<Entreprise[]>(this.apiURL);
   }
 
-  getEntrepriseByIndex(index: number): Entreprise {
-    this.http.get<Entreprise[]>(`${this.apiURL}/${index}`).subscribe(data => {
-      this.entreprise = data[0]
-    })
-    return this.entreprise
+  getEntrepriseById(index: number): Observable<Entreprise> {
+    return this.http.get<Entreprise>(`${this.apiURL}/${index}`);
   }
 
   get5LastEntreprises(): Observable<Entreprise[]> {

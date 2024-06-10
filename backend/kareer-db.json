@@ -182,8 +182,8 @@
     },
     {
       "id": 21,
-      "nom": "k",
-      "prenom": "v",
+      "nom": "Kretz",
+      "prenom": "Victor",
       "email": "v.k@sfr.fr",
       "password": "test",
       "profil_picture": "",
@@ -414,6 +414,11 @@
       "candidat_ID": 6,
       "offre_ID": 10,
       "date": "2024-06-02"
+    }, {
+      "id": 6,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-10"
     }
   ]
 }

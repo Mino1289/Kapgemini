@@ -13,7 +13,7 @@ export class FormConnexionComponent implements OnInit {
   user: User = new User(0, "", "", "", "", "", false);
   errorMessage: string | null = null;
 
-  constructor(private userService: UserService, private sessionService: SessionService, private router: Router) { }
+  constructor(private router: Router, private userService: UserService, private sessionService: SessionService) { }
 
   ngOnInit(): void {
   }

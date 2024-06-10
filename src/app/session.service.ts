@@ -21,6 +21,11 @@ export class SessionService {
     }
   }
 
+  deconnect(): void {
+    localStorage.removeItem('user');
+    this.user = null;
+  }
+
   isAuthenticated(): boolean {
     return this._user !== null || this.user !== null;
   }

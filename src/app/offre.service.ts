@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Candidature } from 'src/models/Candidature';
 import { Offre } from 'src/models/Offre';
 
 @Injectable({

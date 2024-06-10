@@ -22,7 +22,7 @@ export class CandidatureComponent implements OnInit {
   }
 
   candidater() {
-    this.candidature = new Candidature(11, 2, 4, Date.now().toString());
+    // this.candidature = new Candidature(11, 2, 4, Date.now().toString());
     this.candidatureService.postCandidature(this.candidature);
   }
 

@@ -1,6 +1,13 @@
 <h1>Bienvenue sur Kareer</h1>
 
-<div class="derniere-offre">
-    <h3>Dernière offre publié !</h3>
-    <app-offre [offre]="lastOffre"></app-offre>
+<div class="row">
+
+    <div class="col derniere-offre">
+        <h3>Dernière offre publié !</h3>
+        <app-offre [offre]="lastOffre"></app-offre>
+    </div>
+
+    <div class="col welcome-back" *ngIf="this.isLogged">
+        <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
+    </div>
 </div>

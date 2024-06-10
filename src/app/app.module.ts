@@ -15,6 +15,9 @@ import { CandidatureComponent } from './candidature/candidature.component';
 import { FormConnexionComponent } from './form-connexion/form-connexion.component';
 import { FormsModule } from '@angular/forms';
 import { FormRegisterComponent } from './form-register/form-register.component';
+import { DeconnexionComponent } from './deconnexion/deconnexion.component';
+import { ProfilComponent } from './profil/profil.component';
+import { CandidatureFullComponent } from './candidature-full/candidature-full.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FormRegisterComponent } from './form-register/form-register.component';
     UserListComponent,
     CandidatureComponent,
     FormConnexionComponent,
-    FormRegisterComponent
+    FormRegisterComponent,
+    DeconnexionComponent,
+    ProfilComponent,
+    CandidatureFullComponent
   ],
   imports: [
     BrowserModule,

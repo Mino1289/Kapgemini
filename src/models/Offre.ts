@@ -8,7 +8,7 @@ export class Offre {
       public description: string,
       public date: string,
       public recruteur_ID: number,
-      public ID_entreprise: number
+      public entreprise_ID: number
    ) {
       this.id = id;
       this.titre = titre;
@@ -18,6 +18,6 @@ export class Offre {
       this.description = description;
       this.date = date;
       this.recruteur_ID = recruteur_ID;
-      this.ID_entreprise = ID_entreprise;
+      this.entreprise_ID = entreprise_ID;
    }
 }
