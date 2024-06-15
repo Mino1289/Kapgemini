@@ -1,5 +1,44 @@
 <div class="container">
-    <div class="row row-cols-auto">
+<form (ngSubmit)="search()" class="row">
+    <div class="contrat col">
+        Contrats
+        <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="2" name="CDI" id="CheckboxCDI" [(ngModel)]="CDI">
+            <label class="form-check-label" for="CheckboxCDI">
+                CDI
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" name="Stage" id="CheckboxStage" [(ngModel)]="Stage">
+            <label class="form-check-label" for="CheckboxStage">
+                Stage
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" name="CDD" id="CheckboxCDD" [(ngModel)]="CDD">
+            <label class="form-check-label" for="CheckboxCDD">
+                CDD
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="4" name="Alternance" id="CheckboxAlternance" [(ngModel)]="Alternance">
+            <label class="form-check-label" for="CheckboxAlternance">
+                Alternance
+            </label>
+        </div>
+    </div>
+    <div class="col">
+        Entreprises
+        <select class="form-select" multiple name="Entreprise" [(ngModel)]="entrepriseID">
+            <!-- <option value="0">Entreprise</option> -->
+            <option *ngFor="let entreprise of entreprises" [value]="entreprise.id">{{entreprise.nom}}</option>
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+    <div class="row row-cols-auto mt-5">
         <app-offre *ngFor="let offre of offres" [offre]="offre"></app-offre>
     </div>
-</div>  
+</div>

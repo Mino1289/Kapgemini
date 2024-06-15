@@ -21,7 +21,7 @@ export class EntrepriseService {
     return this.http.get<Entreprise>(`${this.apiURL}/${index}`);
   }
 
-  get5LastEntreprises(): Observable<Entreprise[]> {
-    return this.http.get<Entreprise[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=5`);
+  getNLastEntreprises(n: number): Observable<Entreprise[]> {
+    return this.http.get<Entreprise[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=${n}`);
   }
 }

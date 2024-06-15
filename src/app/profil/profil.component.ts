@@ -16,19 +16,23 @@ export class ProfilComponent implements OnInit {
   user: User | null = this.sessionService.user;
   candidatures: Candidature[] = [];
 
-  constructor(private router: Router, private sessionService: SessionService, private candidatureService: CandidatureService) { }
-
-  ngOnInit(): void {
+  constructor(private router: Router, private sessionService: SessionService, private candidatureService: CandidatureService) {
     if (!this.sessionService.isAuthenticated() || this.user === null) {
       this.router.navigate(['/', 'connexion']);
     }
     var id = this.user?.id;
     if (id !== undefined) {
-      this.candidatureService.getCandidatureByUserId(id).subscribe(data => {
-        this.candidatures = data;
-      });
+      this.candidatureService.getCandidatureByUserId(id).forEach(candidatures => { this.candidatures = candidatures });
     }
+
 
   }
 
+  ngOnInit(): void {
+
+  }
+
+  goToOffres() {
+    this.router.navigate(['/', 'offres'])
+  }
 }

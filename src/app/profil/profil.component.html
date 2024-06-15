@@ -1,8 +1,19 @@
 <div class="container">
     <app-user [user]="this.user" class="m-3"></app-user>
-    <div class="row m-3">
-        <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
-            class="col"></app-candidature-full>
+
+    <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
+        <h3 class="title">Vos candidatures</h3>
+        <div class="row row-cols-4">
+            <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
+                class="m-3"></app-candidature-full>
+        </div>
     </div>
+    <ng-template #noCandidatureBlock>
+        <br>
+        Vous n'avez pas encore candidaté à une offre. <br><br>
+        <button class="btn btn-primary" (click)="goToOffres()">
+            Voir les offres
+        </button>
+    </ng-template>
 
 </div>

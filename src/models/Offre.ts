@@ -1,8 +1,10 @@
+import { Contrat } from "./Contrat";
+
 export class Offre {
    constructor(
       public id: number,
       public titre: string,
-      public contrat: string,
+      public contrat: Contrat,
       public emplacement: string,
       public marque: string,
       public description: string,

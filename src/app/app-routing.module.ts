@@ -9,11 +9,13 @@ import { FormConnexionComponent } from './form-connexion/form-connexion.componen
 import { FormRegisterComponent } from './form-register/form-register.component';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 import { ProfilComponent } from './profil/profil.component';
+import { EntreprisesComponent } from './entreprises/entreprises.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'offres', component: OffreListComponent },
   { path: 'users', component: UserListComponent },
+  { path: 'entreprises', component: EntreprisesComponent},
   { path: 'offre/:id', component: OffreFullComponent },
   { path: 'candidature/:id', component: CandidatureComponent },
   { path: 'connexion', component: FormConnexionComponent },

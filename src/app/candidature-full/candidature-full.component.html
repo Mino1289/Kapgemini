@@ -1,8 +1,13 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h3 class="card-title">{{offre.titre}}</h3>
-        <h5 class="card-subtitle">{{entreprise}}</h5>
-        <p class="card-text">{{offre.description}}</p>
+        <h3 class="card-title">{{offre?.titre}}</h3>
+        <div [ngSwitch]="candidature.status">
+            <span class="badge text-bg-info" *ngSwitchCase="1">En attente</span>
+            <span class="badge text-bg-success" *ngSwitchCase="2">Accepté !</span>
+            <span class="badge text-bg-danger" *ngSwitchCase="3">Refusé</span>
+        </div>
+        <h5 class="card-subtitle">{{entreprise?.nom}}</h5>
+        <p class="card-text">{{offre?.description}}</p>
         <button class="card-link btn btn-primary" (click)="readMore()">Voir l'offre</button>
     </div>
-  </div>
+</div>

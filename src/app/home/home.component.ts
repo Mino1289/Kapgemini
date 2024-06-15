@@ -3,6 +3,7 @@ import { OffreService } from '../offre.service';
 import { Offre } from 'src/models/Offre';
 import { SessionService } from '../session.service';
 import { User } from 'src/models/User';
+import { Contrat } from 'src/models/Contrat';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import { User } from 'src/models/User';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  lastOffre: Offre = new Offre(0, '', '', '', '', '', '', 0, 0);
+  lastNOffre: Offre[] = [];
+  lastOffre!: Offre;
   isLogged: boolean = this.sessionService.isAuthenticated();
   user: User | null = null;
 
@@ -19,9 +21,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.offreService.getNLastOffre(1).subscribe(data => {
-      this.lastOffre = data[0];
-    });
+    this.offreService.getNLastOffre(5).forEach(data => {
+      this.lastNOffre = data;
+    }).then(() => {
+      this.lastOffre = this.lastNOffre[0];
+    })
 
     if (this.isLogged) {
       this.user = this.sessionService.user;

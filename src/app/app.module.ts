@@ -18,6 +18,8 @@ import { FormRegisterComponent } from './form-register/form-register.component';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 import { ProfilComponent } from './profil/profil.component';
 import { CandidatureFullComponent } from './candidature-full/candidature-full.component';
+import { EntrepriseComponent } from './entreprise/entreprise.component';
+import { EntreprisesComponent } from './entreprises/entreprises.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CandidatureFullComponent } from './candidature-full/candidature-full.co
     FormRegisterComponent,
     DeconnexionComponent,
     ProfilComponent,
-    CandidatureFullComponent
+    CandidatureFullComponent,
+    EntrepriseComponent,
+    EntreprisesComponent
   ],
   imports: [
     BrowserModule,

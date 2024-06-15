@@ -276,7 +276,7 @@
     {
       "id": 1,
       "titre": "Ingénieur Environnement",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Ruiz",
       "marque": "Lesage",
       "description": "this is a goooood job",
@@ -287,7 +287,7 @@
     {
       "id": 2,
       "titre": "Responsable Ressources Humaines",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Saint Pierredan",
       "marque": "Humbert",
       "description": "this is a goooood job",
@@ -298,7 +298,7 @@
     {
       "id": 3,
       "titre": "Chercheur en IA",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Chrétien",
       "marque": "Pires",
       "description": "this is a goooood job",
@@ -309,7 +309,7 @@
     {
       "id": 4,
       "titre": "Agent de Sécurité",
-      "contrat": "CDD",
+      "contrat": 3,
       "emplacement": "Merlenec",
       "marque": "Payet Rolland SARL",
       "description": "this is a goooood job",
@@ -320,7 +320,7 @@
     {
       "id": 5,
       "titre": "Acheteur Industriel",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Parent",
       "marque": "Ollivier",
       "description": "this is a goooood job",
@@ -331,7 +331,7 @@
     {
       "id": 6,
       "titre": "Assistant Ressources Humaines",
-      "contrat": "Stage",
+      "contrat": 1,
       "emplacement": "Bergernec",
       "marque": "Chauveau",
       "description": "this is a goooood job",
@@ -342,7 +342,7 @@
     {
       "id": 7,
       "titre": "Technicien de Maintenance",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Perez-sur-Mer",
       "marque": "Joly Hernandez S.A.R.L.",
       "description": "this is a goooood job",
@@ -353,7 +353,7 @@
     {
       "id": 8,
       "titre": "Logisticien",
-      "contrat": "CDD",
+      "contrat": 3,
       "emplacement": "Thierry-sur-Klein",
       "marque": "Lemoine SA",
       "description": "this is a goooood job",
@@ -364,7 +364,7 @@
     {
       "id": 9,
       "titre": "Chargé de Recrutement",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Leroux",
       "marque": "Dupuy Gaillard S.A.R.L.",
       "description": "this is a goooood job",
@@ -375,7 +375,7 @@
     {
       "id": 10,
       "titre": "Responsable Service Client",
-      "contrat": "CDI",
+      "contrat": 2,
       "emplacement": "Muller",
       "marque": "Turpin",
       "description": "this is a goooood job",
@@ -414,11 +414,128 @@
       "candidat_ID": 6,
       "offre_ID": 10,
       "date": "2024-06-02"
-    }, {
+    },
+    {
       "id": 6,
       "candidat_ID": 21,
       "offre_ID": 3,
       "date": "2024-06-10"
+    },
+    {
+      "id": 7,
+      "candidat_ID": 21,
+      "offre_ID": 10,
+      "date": "1718462528607",
+      "status" : 2
+    },
+    {
+      "id": 8,
+      "candidat_ID": 21,
+      "offre_ID": 10,
+      "date": "1718462558084",
+      "status": 3
+    },
+    {
+      "id": 9,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 10,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 11,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 12,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 13,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 14,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 15,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 16,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 17,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 18,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 19,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 20,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 21,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 22,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 23,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 24,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": 25,
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "date": "2024-06-15"
     }
   ]
 }

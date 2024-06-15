@@ -1,8 +1,9 @@
 <div class="container">
     <div>
+        <p>{{message}}</p>
         <h1 class="text-center">Candidature</h1>
-        <h3 class="text-center">{{offre.titre}}</h3>
-
+        <h3 class="text-center">{{offre?.titre}}</h3>
+        <p class="text-center">{{offre?.description}}</p>
 
 
         <button class="btn btn-info" (click)="candidater()">
