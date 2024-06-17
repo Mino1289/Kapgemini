@@ -16,7 +16,7 @@ export class OffreService {
   constructor(private http: HttpClient) { }
 
   getOffres(): Observable<Offre[]> {
-    return this.http.get<Offre[]>(this.apiURL);
+    return this.http.get<Offre[]>(`${this.apiURL}?_sort=id&_order=desc`);
   }
 
   getOffreById(id: number): Observable<Offre> {

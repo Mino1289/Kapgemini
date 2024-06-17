@@ -399,6 +399,16 @@
       "date": "2024-06-03",
       "recruteur_ID": 20,
       "entreprise_ID": 10
+    },
+    {
+      "id": 11,
+      "titre": "Ingénieur informatique",
+      "contrat": "2",
+      "emplacement": "Grenoble",
+      "description": "C++",
+      "date": "2024-06-17",
+      "recruteur_ID": 24,
+      "entreprise_ID": "5"
     }
   ],
   "candidatures": [
