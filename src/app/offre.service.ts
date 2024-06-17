@@ -35,8 +35,8 @@ export class OffreService {
       const params = new HttpParams({fromObject: {contrat_like: `[${critere.contrat.map(c => c).join('')}]`}});
       return this.http.get<Offre[]>(this.apiURL, {params});
     }
-    const params = new HttpParams({fromObject: {contrat_like: `[${critere.contrat.map(c => c).join('')}]`, entreprise_ID_like: `[${critere.entreprise.map(e => e).join('')}]`}});
-    console.log(params)
+    const params = new HttpParams({fromObject: {contrat_like: `[${critere.contrat.map(c => c).join('')}]`, entreprise_ID_like: `[${critere.entreprise.map(e => e).join('')}]`, _sort: 'id', _order: 'desc'}});
+
     return this.http.get<Offre[]>(this.apiURL, {params});
   }
 

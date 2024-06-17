@@ -41,6 +41,7 @@ export class FormAjouterOffreComponent implements OnInit {
         this.errorMessage = 'Erreur lors de l\'ajout de l\'offre';
       }
     });
+    this.offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
   }
 
 }

@@ -1,8 +1,15 @@
 <div class="card m-2" style="width: 18rem;">
     <h5 class="card-header card-title">{{offre.titre}}</h5>
     <div class="card-body">
+        <p>{{offre.description}}</p>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{offre.contrat}}</li>
+            <div [ngSwitch]="offre.contrat">
+                <li class="list-group-item" *ngSwitchCase=1>Stage</li>
+                <li class="list-group-item" *ngSwitchCase=2>CDI</li>
+                <li class="list-group-item" *ngSwitchCase=3>CDD</li>
+                <li class="list-group-item" *ngSwitchCase=3>Alternance</li>
+                <li class="list-group-item" *ngSwitchDefault>?</li>
+            </div>
             <li class="list-group-item">{{offre.emplacement}}</li>
         </ul>
         <a class="btn btn-primary" (click)="apply()">Candidature</a>
