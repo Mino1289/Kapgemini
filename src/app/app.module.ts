@@ -20,6 +20,8 @@ import { ProfilComponent } from './profil/profil.component';
 import { CandidatureFullComponent } from './candidature-full/candidature-full.component';
 import { EntrepriseComponent } from './entreprise/entreprise.component';
 import { EntreprisesComponent } from './entreprises/entreprises.component';
+import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.component';
+import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { EntreprisesComponent } from './entreprises/entreprises.component';
     ProfilComponent,
     CandidatureFullComponent,
     EntrepriseComponent,
-    EntreprisesComponent
+    EntreprisesComponent,
+    FormRegisterRctComponent,
+    FormAjouterOffreComponent
   ],
   imports: [
     BrowserModule,

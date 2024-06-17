@@ -10,7 +10,7 @@ import { Contrat } from 'src/models/Contrat';
   styleUrls: ['./offre-full.component.css']
 })
 export class OffreFullComponent implements OnInit {
-  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', '', 0, 0);
+  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
 
   constructor(private router: Router, activatedRoute: ActivatedRoute, offreService: OffreService) {
     offreService.getOffreById(parseInt(activatedRoute.snapshot.paramMap.get('id') || '0')).forEach(offre => this.offre = offre);

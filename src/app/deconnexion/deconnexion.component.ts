@@ -11,13 +11,12 @@ export class DeconnexionComponent implements OnInit {
 
   constructor(private router: Router, private sessionService: SessionService) {
   }
-  
+
   ngOnInit(): void {
     this.sessionService.deconnect();
-    }
-    
-  goHome() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/']).then(() => {
+      window.location.reload();
+    });
   }
 
 }

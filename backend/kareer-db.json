@@ -188,6 +188,33 @@
       "password": "test",
       "profil_picture": "",
       "isRecruteur": false
+    },
+    {
+      "id": 22,
+      "nom": "Dupond",
+      "prenom": "Jean",
+      "email": "jean.dupond@example.fr",
+      "password": "amd",
+      "profil_picture": "",
+      "isRecruteur": false
+    },
+    {
+      "id": 23,
+      "nom": "vik",
+      "prenom": "kre",
+      "email": "vik@sfr.fr",
+      "password": "amd",
+      "profil_picture": "",
+      "isRecruteur": true
+    },
+    {
+      "id": 24,
+      "nom": "test",
+      "prenom": "test",
+      "email": "test",
+      "password": "test",
+      "profil_picture": "",
+      "isRecruteur": true
     }
   ],
   "entreprises": [
@@ -278,7 +305,6 @@
       "titre": "Ingénieur Environnement",
       "contrat": 2,
       "emplacement": "Ruiz",
-      "marque": "Lesage",
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 11,
@@ -289,7 +315,6 @@
       "titre": "Responsable Ressources Humaines",
       "contrat": 2,
       "emplacement": "Saint Pierredan",
-      "marque": "Humbert",
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 12,
@@ -300,7 +325,6 @@
       "titre": "Chercheur en IA",
       "contrat": 2,
       "emplacement": "Chrétien",
-      "marque": "Pires",
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 13,
@@ -311,7 +335,6 @@
       "titre": "Agent de Sécurité",
       "contrat": 3,
       "emplacement": "Merlenec",
-      "marque": "Payet Rolland SARL",
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 14,
@@ -322,7 +345,6 @@
       "titre": "Acheteur Industriel",
       "contrat": 2,
       "emplacement": "Parent",
-      "marque": "Ollivier",
       "description": "this is a goooood job",
       "date": "2024-06-02",
       "recruteur_ID": 15,
@@ -333,7 +355,6 @@
       "titre": "Assistant Ressources Humaines",
       "contrat": 1,
       "emplacement": "Bergernec",
-      "marque": "Chauveau",
       "description": "this is a goooood job",
       "date": "2024-06-02",
       "recruteur_ID": 16,
@@ -344,7 +365,6 @@
       "titre": "Technicien de Maintenance",
       "contrat": 2,
       "emplacement": "Perez-sur-Mer",
-      "marque": "Joly Hernandez S.A.R.L.",
       "description": "this is a goooood job",
       "date": "2024-06-01",
       "recruteur_ID": 17,
@@ -355,7 +375,6 @@
       "titre": "Logisticien",
       "contrat": 3,
       "emplacement": "Thierry-sur-Klein",
-      "marque": "Lemoine SA",
       "description": "this is a goooood job",
       "date": "2024-06-01",
       "recruteur_ID": 18,
@@ -366,7 +385,6 @@
       "titre": "Chargé de Recrutement",
       "contrat": 2,
       "emplacement": "Leroux",
-      "marque": "Dupuy Gaillard S.A.R.L.",
       "description": "this is a goooood job",
       "date": "2024-06-04",
       "recruteur_ID": 19,
@@ -377,7 +395,6 @@
       "titre": "Responsable Service Client",
       "contrat": 2,
       "emplacement": "Muller",
-      "marque": "Turpin",
       "description": "this is a goooood job",
       "date": "2024-06-03",
       "recruteur_ID": 20,
@@ -389,49 +406,63 @@
       "id": 1,
       "candidat_ID": 3,
       "offre_ID": 2,
-      "date": "2024-06-04"
+      "recruteur_ID": 24,
+      "date": "2024-06-04",
+      "status": 3
     },
     {
       "id": 2,
       "candidat_ID": 7,
       "offre_ID": 4,
-      "date": "2024-06-04"
+      "recruteur_ID": 24,
+      "date": "2024-06-04",
+      "status": 2
     },
     {
       "id": 3,
       "candidat_ID": 1,
       "offre_ID": 5,
-      "date": "2024-06-03"
+      "recruteur_ID": 24,
+      "date": "2024-06-03",
+      "status": 2
     },
     {
       "id": 4,
       "candidat_ID": 10,
       "offre_ID": 8,
-      "date": "2024-06-03"
+      "recruteur_ID": 24,
+      "date": "2024-06-03",
+      "status": 1
     },
     {
       "id": 5,
       "candidat_ID": 6,
       "offre_ID": 10,
-      "date": "2024-06-02"
+      "recruteur_ID": 24,
+      "date": "2024-06-02",
+      "status": 3
     },
     {
       "id": 6,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-10"
+      "recruteur_ID": 24,
+      "date": "2024-06-10",
+      "status": 2
     },
     {
       "id": 7,
       "candidat_ID": 21,
       "offre_ID": 10,
+      "recruteur_ID": 24,
       "date": "1718462528607",
-      "status" : 2
+      "status": 2
     },
     {
       "id": 8,
       "candidat_ID": 21,
       "offre_ID": 10,
+      "recruteur_ID": 24,
       "date": "1718462558084",
       "status": 3
     },
@@ -439,103 +470,145 @@
       "id": 9,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 10,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 11,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 2
     },
     {
       "id": 12,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 13,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 14,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 15,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 16,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 17,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 18,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 19,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 20,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 21,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 23,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 22,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 2
     },
     {
       "id": 23,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 3
     },
     {
       "id": 24,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 1
     },
     {
       "id": 25,
       "candidat_ID": 21,
       "offre_ID": 3,
-      "date": "2024-06-15"
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 1
+    },
+    {
+      "id": 26,
+      "candidat_ID": 22,
+      "offre_ID": 9,
+      "recruteur_ID": 24,
+      "date": "2024-06-17",
+      "status": 1
     }
   ]
 }

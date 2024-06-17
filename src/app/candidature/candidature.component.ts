@@ -34,7 +34,7 @@ export class CandidatureComponent implements OnInit {
       return;
     }
     var date = new Date(Date.now());
-    this.candidature = new Candidature(0, user.id, this.offre.id, date.toISOString().split('T')[0], Status.EN_ATTENTE);
+    this.candidature = new Candidature(0, user.id, this.offre.id, this.offre.recruteur_ID, date.toISOString().split('T')[0], Status.EN_ATTENTE);
     this.candidatureService.postCandidature(this.candidature).subscribe(response => {
       if (response) {
         this.message = 'Votre candidature a bien été envoyée';

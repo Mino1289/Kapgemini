@@ -1,7 +1,7 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
+<div class="card">
+    <div class="card-body" *ngIf="!userConnected?.isRecruteur; else recruteurView">
         <h3 class="card-title">{{offre?.titre}}</h3>
-        <div [ngSwitch]="candidature.status">
+        <div [ngSwitch]="candidature.status" *ngIf="">
             <span class="badge text-bg-info" *ngSwitchCase="1">En attente</span>
             <span class="badge text-bg-success" *ngSwitchCase="2">Accepté !</span>
             <span class="badge text-bg-danger" *ngSwitchCase="3">Refusé</span>
@@ -10,4 +10,11 @@
         <p class="card-text">{{offre?.description}}</p>
         <button class="card-link btn btn-primary" (click)="readMore()">Voir l'offre</button>
     </div>
+    <ng-template #recruteurView class="card-body">
+        <h3 class="card-title">{{user?.nom}} {{user?.prenom}}</h3>
+        <h5 class="card-subtitle">{{offre?.titre}}</h5>
+        <button class="card-link btn btn-success" (click)="accepter()">Accepter</button>
+        <button class="card-link btn btn-danger" (click)="refuser()">Refuser</button>
+
+    </ng-template>
 </div>

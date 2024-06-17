@@ -11,7 +11,7 @@ import { Offre } from 'src/models/Offre';
 })
 export class OffreService {
   private apiURL = 'http://localhost:3000/offres';
-  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', '', 0, 0);
+  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
 
   constructor(private http: HttpClient) { }
 
@@ -42,5 +42,9 @@ export class OffreService {
 
   getNLastOffre(n: number): Observable<Offre[]> {
     return this.http.get<Offre[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=${n}`);
+  }
+
+  ajouterOffre(offre: Offre): Observable<Offre> {
+    return this.http.post<Offre>(this.apiURL, offre);
   }
 }

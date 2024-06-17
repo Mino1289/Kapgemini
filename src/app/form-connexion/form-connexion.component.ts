@@ -22,7 +22,9 @@ export class FormConnexionComponent implements OnInit {
     this.userService.authenticate(this.user).subscribe(user => {
       if (user) {
         this.sessionService.user = user;
-        this.router.navigate(['/']);
+        this.router.navigate(['/']).then(() => {
+          window.location.reload();
+        });
       } else {
         this.errorMessage = "Email ou mot de passe incorrect.";
       }

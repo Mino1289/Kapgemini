@@ -10,22 +10,26 @@ import { FormRegisterComponent } from './form-register/form-register.component';
 import { DeconnexionComponent } from './deconnexion/deconnexion.component';
 import { ProfilComponent } from './profil/profil.component';
 import { EntreprisesComponent } from './entreprises/entreprises.component';
+import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.component';
+import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'offres', component: OffreListComponent },
   { path: 'users', component: UserListComponent },
-  { path: 'entreprises', component: EntreprisesComponent},
+  { path: 'entreprises', component: EntreprisesComponent },
   { path: 'offre/:id', component: OffreFullComponent },
   { path: 'candidature/:id', component: CandidatureComponent },
   { path: 'connexion', component: FormConnexionComponent },
   { path: 'register', component: FormRegisterComponent },
-  { path: 'deconnexion', component: DeconnexionComponent},
+  { path: 'register-rct', component: FormRegisterRctComponent },
+  { path: 'ajouter-offre', component: FormAjouterOffreComponent },
+  { path: 'deconnexion', component: DeconnexionComponent },
   { path: 'profil', component: ProfilComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

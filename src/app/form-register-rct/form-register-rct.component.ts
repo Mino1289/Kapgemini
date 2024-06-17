@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/models/User';
 import { UserService } from '../user.service';
-import { map } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-form-register',
-  templateUrl: './form-register.component.html',
-  styleUrls: ['./form-register.component.css']
+  selector: 'app-form-register-rct',
+  templateUrl: './form-register-rct.component.html',
+  styleUrls: ['./form-register-rct.component.css']
 })
-export class FormRegisterComponent implements OnInit {
-  user: User = new User(0, '', '', '', '', '', false);
+export class FormRegisterRctComponent implements OnInit {
+  user: User = new User(0, '', '', '', '', '', true);
   errorMessage: string | null = null;
   successMessage: string | null = null;
 
-  constructor(private userService: UserService) { }
+  constructor(private router: Router, private userService: UserService) { }
 
   ngOnInit(): void {
   }
@@ -30,8 +30,8 @@ export class FormRegisterComponent implements OnInit {
         this.errorMessage = 'Cette adresse email est déjà utilisée';
         return;
       }
-      
-      this.userService.createUser(this.user).subscribe(response => {        
+
+      this.userService.createUser(this.user).subscribe(response => {
         if (response) {
           this.successMessage = 'Votre compte a été créé avec succès';
         } else {

@@ -14,10 +14,8 @@ export class UserService {
     return this.http.get<User[]>(this.apiURL);
   }
 
-  getUserByIndex(index: number): User | void {
-    this.http.get<User[]>(`${this.apiURL}/${index}`).subscribe(data => {
-      return data[0];
-    });
+  getUserById(index: number): Observable<User> {
+    return this.http.get<User>(`${this.apiURL}/${index}`);
   }
 
   createUser(user: User): Observable<User> {

@@ -21,8 +21,10 @@ export class ProfilComponent implements OnInit {
       this.router.navigate(['/', 'connexion']);
     }
     var id = this.user?.id;
-    if (id !== undefined) {
+    if (id !== undefined && !this.user?.isRecruteur) {
       this.candidatureService.getCandidatureByUserId(id).forEach(candidatures => { this.candidatures = candidatures });
+    } else if (id !== undefined && this.user?.isRecruteur) {
+      this.candidatureService.getCandidaturesByRecruteurId(id).forEach(candidatures => { this.candidatures = candidatures });
     }
 
 
