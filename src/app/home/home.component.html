@@ -1,1 +1,16 @@
-<p>home works!</p>
+<h1>Bienvenue sur Kareer</h1>
+
+<div class="row">
+
+    <div class="col derniere-offre">
+        <h3>Dernières offre publié !</h3>
+        <div class="row row-cols-auto">
+            <app-offre *ngFor="let offre of lastNOffre" [offre]="offre"></app-offre>
+            <!-- TODO: Faire un carrousel-->
+        </div>
+    </div>
+
+    <div class="col welcome-back" *ngIf="this.isLogged">
+        <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
+    </div>
+</div>

@@ -1,23 +1,43 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { User } from 'src/models/User';
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  private apiURL = 'http://localhost:3000/users';
 
-  user!:User;
+  constructor(private http: HttpClient) { }
 
-  constructor(private http : HttpClient) { }
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>(this.apiURL);
+  }
 
-    getUsers() : Observable<User[]>{
-      return this.http.get<User[]>('http://localhost:3000/users');
-    }
+  getUserById(index: number): Observable<User> {
+    return this.http.get<User>(`${this.apiURL}/${index}`);
+  }
 
-    getUserByIndex(index : number): User{
-      this.http.get<User>('http://localhost:3000/users/'+index).subscribe(data => {this.user = data});
-      return this.user;
-    }
-  
+  createUser(user: User): Observable<User> {
+    return this.http.post<User>(this.apiURL, user);
+  }
+
+  authenticate(user: User): Observable<User | null> {
+    return this.getUsers().pipe(
+      map((users: User[]) => {
+        const userFound = users.find(u => u.email === user.email && u.password === user.password);
+        return userFound ? userFound : null;
+      })
+    );
+  }
+
+  checkEmail(email: string): Observable<boolean> {
+    return this.getUsers().pipe(
+      map((users: User[]) => {
+        return users.some(u => u.email === email);
+      })
+    );
+  }
+      
+
 }

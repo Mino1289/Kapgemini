@@ -1,0 +1,49 @@
+<!-- public nom: string,
+public prenom: string,
+public email: string,
+public password: string,
+public profil_picture: string,
+public isRecruteur: boolean -->
+
+<div class="container">
+
+    <form (ngSubmit)="register()" class="row g-3 mt-3 form">
+        <h1 class="text-center">Créer un compte recruteur</h1>
+
+        <div *ngIf="successMessage" class="alert alert-success">
+            {{successMessage}}
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger">
+            {{errorMessage}}
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <label for="inputNom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="inputNom" placeholder="Dupond" name="nom" [(ngModel)]="user.nom">
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label for="inputPrenom" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="inputPrenom" placeholder="Jean" name="prenom" [(ngModel)]="user.prenom">
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="jean.dupond@example.com" name="email"
+                [(ngModel)]="user.email">
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label for="inputPassword" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="inputPassword" name="password" [(ngModel)]="user.password">
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label for="inputCity" class="form-label">Lien d'une photo de profil.</label>
+            <input type="text" class="form-control" id="inputCity" name="profil_picture" [(ngModel)]="user.profil_picture">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">S'enregistrer</button>
+        </div>
+    </form>
+
+    <a routerLink="/register-rct">Créer un compte Recruteur.</a>
+</div>

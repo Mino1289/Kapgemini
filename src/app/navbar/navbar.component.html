@@ -1,17 +1,44 @@
 <nav class="navbar navbar-expand-lg bg-body-secondary">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="">Kareer</a>
+        <a class="navbar-brand" routerLink="">
+            <img src="../../favicon.ico" alt="Logo" width="32" height="32" class="d-inline-block align-text-top">
+            Kareer
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" routerLink="">Home</a>
-                <a class="nav-link" routerLink="/offres">Offres</a>
-                <a class="nav-link" routerLink="/users">Users</a>
-
-            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/offres">Offres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/entreprises">Entreprises</a>
+                </li>
+                <li class="nav-item" *ngIf="this.isAuth && this.user?.isRecruteur">
+                    <a class="nav-link" routerLink="/ajouter-offre">Ajouer une offre</a>
+                </li>
+                <li class="nav-item" *ngIf="!this.isAuth">
+                    <a class="nav-link" routerLink="/connexion">Se connecter</a>
+                </li>
+                <li class="nav-item" *ngIf="!this.isAuth">
+                    <a class="nav-link" routerLink="/register">Créer un compte</a>
+                </li>
+                <li class="nav-item" *ngIf="this.isAuth">
+                    <a class="nav-link" routerLink="/profil">Profil</a>
+                </li>
+                <li class="nav-item" *ngIf="this.isAuth">
+                    <a class="nav-link" routerLink="/deconnexion">Se déconnecter</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
     </div>
 </nav>

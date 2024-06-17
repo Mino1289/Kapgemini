@@ -1,0 +1,44 @@
+<div class="container">
+    <div *ngIf="!user?.isRecruteur; else isRecruteurBlock">
+
+        <app-user [user]="this.user" class="m-3"></app-user>
+        
+        <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
+            <h3 class="title">Vos candidatures</h3>
+            <div class="row row-cols-4">
+                <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
+                class="m-3"></app-candidature-full>
+            </div>
+        </div>
+        <ng-template #noCandidatureBlock>
+            <br>
+            Vous n'avez pas encore candidaté à une offre. <br><br>
+            <button class="btn btn-primary" (click)="goToOffres()">
+                Voir les offres
+            </button>
+        </ng-template>
+    </div>
+    <ng-template #isRecruteurBlock>
+        <div class="row m-3">
+            <app-user [user]="this.user" class="col"></app-user>
+            <div class="col">
+                <button class="btn btn-primary" routerLink="/ajouter-offre">Publier une offre</button>
+            </div>
+        </div>
+        <div class="m-3" *ngIf="candidatures.length > 0; else noOffreToManage">
+            <h3 class="title">Les candidatures à vos offres d'emplois</h3>
+            <div class="row row-cols-4">
+                <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
+                class="m-3"></app-candidature-full>
+            </div>
+        </div>
+        <ng-template #noOffreToManage>
+            <br>
+            Personne n'a encore candidaté à une de vos offres. <br><br>
+            <button class="btn btn-primary" routerLink="/ajouter-offre">
+                Publier une offre
+            </button>
+        </ng-template>
+    </ng-template>
+        
+</div>
