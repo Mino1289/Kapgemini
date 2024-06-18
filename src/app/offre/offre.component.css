@@ -1,3 +1,4 @@
+
 .card {
     border: none;
     border-radius: 15px;
@@ -45,4 +46,34 @@
 .btn-primary:hover {
     background-color: #53b7ff;
     transform: scale(1.05);
+.card-offre{
+    height: 100%;
+    width: 18rem;
+}
+
+.card-offre-title {
+    height: 25%; 
+    text-align: center; 
+    align-content: center;
+    background-color: #ADD4F3;
+}
+
+.div-btn-apply{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.btn-apply{
+    background-color: #EFF3F5;
+}
+
+.day-date{
+    display: flex;
+    flex-direction: row;
+}
+
+.day-date p {
+    margin-left: .5rem;
+
 }
