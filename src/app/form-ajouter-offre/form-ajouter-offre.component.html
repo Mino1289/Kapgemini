@@ -1,12 +1,7 @@
-<!-- public titre: string,
-public contrat: Contrat,
-public emplacement: string,
-public description: string -->
-
 <div class="container">
 
-    <form (ngSubmit)="ajouterOffre()" class="row g-3 mt-3 form">
-        <h1 class="text-center">Publier une offre</h1>
+    <form (ngSubmit)="ajouterOffre()" class="row g-3 mt-3 p-4 bg-light border rounded shadow-sm">
+        <h1 class="text-center mb-4">Publier une offre</h1>
 
         <div *ngIf="successMessage" class="alert alert-success">
             {{successMessage}}
@@ -16,42 +11,42 @@ public description: string -->
             {{errorMessage}}
         </div>
 
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-6">
             <label for="inputTitre" class="form-label">Titre</label>
-            <input type="text" class="form-control" id="inputTitre" placeholder="Ingénieur" name="titre"
-                [(ngModel)]="offre.titre">
+            <input type="text" class="form-control" id="inputTitre" placeholder="Ingénieur" name="titre" [(ngModel)]="offre.titre">
         </div>
-        <div class="col-md-6 col-lg-6">
+
+        <div class="col-md-6">
             <label for="inputContrat" class="form-label">Contrat</label>
             <select name="contrat" id="inputContrat" class="form-select" [(ngModel)]="offre.contrat">
-                <option value=0>Inconnu</option>
-                <option value=1>Stage</option>
-                <option value=2>CDI</option>
-                <option value=3>CDD</option>
-                <option value=4>Alternance</option>
+                <option value="0">Inconnu</option>
+                <option value="1">Stage</option>
+                <option value="2">CDI</option>
+                <option value="3">CDD</option>
+                <option value="4">Alternance</option>
             </select>
         </div>
-        <div class="col-md-6 col-lg-6">
-            <label for="inputDescription" class="form-label">Description</label>
-            <textarea class="form-control" id="inputDescription" placeholder="Au sein de l'équipe, vous serez amener à..." name="email"
-                [(ngModel)]="offre.description">
-            </textarea>
-        </div>
-        <div class="col-md-6 col-lg-6">
+
+        <div class="col-md-6">
             <label for="inputEmplacement" class="form-label">Emplacement</label>
             <input type="text" class="form-control" id="inputEmplacement" placeholder="Paris, ..." name="emplacement" [(ngModel)]="offre.emplacement">
         </div>
 
-        <div class="col-md-6 col-lg-6">
-            <label for="inputEntreprise">Entreprise</label>
+        <div class="col-md-6">
+            <label for="inputDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="inputDescription" placeholder="Au sein de l'équipe, vous serez amener à..." name="description" [(ngModel)]="offre.description"></textarea>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputEntreprise" class="form-label">Entreprise</label>
             <select id="inputEntreprise" class="form-select" name="Entreprise" [(ngModel)]="offre.entreprise_ID">
-                <option value="0">Entreprise</option>
+                <option value="0">Sélectionner une entreprise</option>
                 <option *ngFor="let entreprise of entreprises" [value]="entreprise.id">{{entreprise.nom}}</option>
             </select>
         </div>
 
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Ajouter l'offre</button>
+        <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Ajouter l'offre</button>
         </div>
     </form>
 </div>

@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #f8f9fa; /* Light grey background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border at the bottom */
+}
+.navbar-brand img {
+    margin-right: 10px; /* Space between logo and text */
+}
+.nav-link {
+    color: #343a40; /* Dark grey color for links */
+}
+.nav-link:hover {
+    color: #007bff; /* Blue color on hover */
+}
+.navbar-toggler {
+    border: none; /* Remove default border from toggler */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom icon color */
+}
+.form-control {
+    border-radius: 0.25rem; /* Rounded corners for search input */
+}
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+}

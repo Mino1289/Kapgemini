@@ -1,0 +1,42 @@
+.card {
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.card-body {
+    padding: 20px;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-subtitle {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}

@@ -1,0 +1,45 @@
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+}
+
+.card-header {
+    background: linear-gradient(45deg, #408cc4, #53b7ff);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+.list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #e9ecef;
+}
+.list-group-item i {
+    margin-right: 8px;
+    color: #408cc4;
+}
+.btn-primary {
+    background-color: #408cc4;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-primary i {
+    margin-right: 8px;
+}
+.btn-primary:hover {
+    background-color: #53b7ff;
+    transform: scale(1.05);
+}

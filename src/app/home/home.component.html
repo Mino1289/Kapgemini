@@ -1,16 +1,16 @@
-<h1>Bienvenue sur Kareer</h1>
+<h1 id="welcome-message">Bienvenue sur Kareer</h1>
 
-<div class="row">
+<div class="col">
+    
+    <div class="col welcome-back" *ngIf="this.isLogged">
+        <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
+    </div>
 
     <div class="col derniere-offre">
         <h3>Dernières offre publié !</h3>
-        <div class="row row-cols-auto">
+        <div class="row row-cols-auto" style="display: flex; justify-content: center;">
             <app-offre *ngFor="let offre of lastNOffre" [offre]="offre"></app-offre>
             <!-- TODO: Faire un carrousel-->
         </div>
-    </div>
-
-    <div class="col welcome-back" *ngIf="this.isLogged">
-        <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
     </div>
 </div>

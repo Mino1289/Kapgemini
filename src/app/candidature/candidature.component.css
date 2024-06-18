@@ -1,0 +1,47 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.container h1, .container h3, .container p {
+    color: #1a202c;
+}
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.container p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#candidature-confirm-message {
+    font-size: larger;
+}
+
+#modal-button{
+    background-color: #408cc4;
+}
+
+.btn-info {
+    background-color: #408cc4;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+.btn-info:hover {
+    background-color: #53b7ff;
+    transform: translateY(-2px);
+}
