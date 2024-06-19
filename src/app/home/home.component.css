@@ -1,3 +1,39 @@
-#welcome-message {
-    text-align: center;
+.scroll-container {
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Customize the scrollbar track */
+.scroll-container::-webkit-scrollbar {
+    height: 12px; /* Set the height of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Customize the scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* Customize the scrollbar corner when both vertical and horizontal scrollbars are present */
+.scroll-container::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+}
+
+.cards-container {
+    display: flex;
+    gap: 16px;
+}
+
+.cards-container app-offre {
+    flex: 0 0 auto;
+    margin: 10px;
 }

@@ -5,7 +5,7 @@
         
         <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
             <h3 class="title">Vos candidatures</h3>
-            <div class="row row-cols-4">
+            <div class="row row-cols-auto" style="display: flex; justify-content: center;">
                 <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
                 class="m-3"></app-candidature-full>
             </div>
@@ -27,7 +27,7 @@
         </div>
         <div class="m-3" *ngIf="candidatures.length > 0; else noOffreToManage">
             <h3 class="title">Les candidatures à vos offres d'emplois</h3>
-            <div class="row row-cols-4">
+            <div class="row row-cols-auto" style="display: flex; justify-content: center;">
                 <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
                 class="m-3"></app-candidature-full>
             </div>

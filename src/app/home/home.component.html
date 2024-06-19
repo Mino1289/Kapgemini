@@ -5,12 +5,12 @@
     <div class="col welcome-back" *ngIf="this.isLogged">
         <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
     </div>
-
+<h3>Dernières offres publiées !</h3>
     <div class="col derniere-offre">
-        <h3>Dernières offre publié !</h3>
-        <div class="row row-cols-auto" style="display: flex; justify-content: center;">
-            <app-offre *ngFor="let offre of lastNOffre" [offre]="offre"></app-offre>
-            <!-- TODO: Faire un carrousel-->
+        <div class="scroll-container">
+            <div class="cards-container">
+                <app-offre *ngFor="let offre of lastNOffre" [offre]="offre"></app-offre>
+            </div>
         </div>
     </div>
 </div>

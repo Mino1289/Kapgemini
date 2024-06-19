@@ -1,4 +1,4 @@
-<div class="card" >
+<div class="card text-center" style="align-items: center; justify-content: center;">
     <div class="card-body" *ngIf="!userConnected?.isRecruteur; else recruteurView">
         <h3 class="card-title">{{offre?.titre}}</h3>
         <div [ngSwitch]="candidature.status" *ngIf="">
@@ -8,7 +8,9 @@
         </div>
         <h5 class="card-subtitle">{{entreprise?.nom}}</h5>
         <p class="card-text">{{offre?.description}}</p>
-        <button class="card-link btn btn-primary" (click)="readMore()">Voir l'offre</button>
+        <div class="button-voir-offre">
+        <button class="card-link btn btn-primary" style="background-color: #408cc4; border: none;" (click)="readMore()">Voir l'offre</button>
+    </div>
     </div>
     <ng-template #recruteurView class="card-body">
         <h3 class="card-title">{{user?.nom}} {{user?.prenom}}</h3>

@@ -215,6 +215,15 @@
       "password": "test",
       "profil_picture": "",
       "isRecruteur": true
+    },
+    {
+      "id": 0,
+      "nom": "Rey",
+      "prenom": "Théo",
+      "email": "reytheopro@gmail.com",
+      "password": "1234",
+      "profil_picture": "",
+      "isRecruteur": false
     }
   ],
   "entreprises": [
@@ -409,6 +418,16 @@
       "date": "2024-06-17",
       "recruteur_ID": 24,
       "entreprise_ID": "5"
+    },
+    {
+      "id": 0,
+      "titre": "offre de stage",
+      "contrat": "1",
+      "emplacement": "Hagenthal",
+      "description": "Offre de stage dans l'IA ",
+      "date": "2024-06-19",
+      "recruteur_ID": "24",
+      "entreprise_ID": "2"
     }
   ],
   "candidatures": [
@@ -629,7 +648,335 @@
       "status": 3
     },
     {
-      "id": 0,
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "1",
+      "recruteur_ID": 11,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
+      "candidat_ID": "24",
+      "offre_ID": "2",
+      "recruteur_ID": 12,
+      "date": "2024-06-18",
+      "status": 1
+    },
+    {
+      "id": "0",
       "candidat_ID": "24",
       "offre_ID": "1",
       "recruteur_ID": 11,
@@ -638,322 +985,34 @@
     },
     {
       "id": 0,
-      "candidat_ID": "24",
+      "candidat_ID": 0,
       "offre_ID": "10",
       "recruteur_ID": 20,
-      "date": "2024-06-18",
+      "date": "2024-06-19",
       "status": 1
     },
     {
       "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
+      "candidat_ID": 0,
+      "offre_ID": "1",
+      "recruteur_ID": 11,
+      "date": "2024-06-19",
       "status": 1
     },
     {
       "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
+      "candidat_ID": 0,
+      "offre_ID": "11",
+      "recruteur_ID": 24,
+      "date": "2024-06-19",
       "status": 1
     },
     {
       "id": 0,
-      "candidat_ID": "24",
+      "candidat_ID": 0,
       "offre_ID": "10",
       "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "10",
-      "recruteur_ID": 20,
-      "date": "2024-06-18",
-      "status": 1
-    },
-    {
-      "id": 0,
-      "candidat_ID": "24",
-      "offre_ID": "2",
-      "recruteur_ID": 12,
-      "date": "2024-06-18",
+      "date": "2024-06-19",
       "status": 1
     }
   ]
