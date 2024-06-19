@@ -48,7 +48,6 @@ export class OffreListComponent implements OnInit {
     this.entrepriseID.forEach(id => {
       this.critere.entreprise.push(id);
     });
-    console.log(this.critere);
     this.offreService.getOffresByCritere(this.critere).subscribe(data => { this.offres = data });
   }
 }

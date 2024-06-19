@@ -9,15 +9,15 @@ import { Status } from 'src/models/Status';
 })
 export class CandidatureService {
   private apiURL = 'http://localhost:3000/candidatures';
-  candidature!:Candidature;
+  candidature!: Candidature;
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getCandidatures() : Observable<Candidature[]>{
+  getCandidatures(): Observable<Candidature[]> {
     return this.http.get<Candidature[]>(this.apiURL);
   }
 
-  getCandidatureByIndex(index : number): Candidature{
+  getCandidatureByIndex(index: number): Candidature {
     this.http.get<Candidature[]>(`${this.apiURL}/${index}`).subscribe(data => {
       this.candidature = data[0];
     });
@@ -36,6 +36,9 @@ export class CandidatureService {
     return this.http.post<Candidature>(this.apiURL, candidature);
   }
   setStatus(candidature: Candidature): Observable<Candidature> {
-    return this.http.put<Candidature>(`${this.apiURL}/${candidature.id}`, candidature );
+    return this.http.put<Candidature>(`${this.apiURL}/${candidature.id}`, candidature);
+  }
+  alreadyApplied(userId: number | undefined, offreId: number): Observable<Candidature[]> {
+    return this.http.get<Candidature[]>(`${this.apiURL}/?candidat_ID=${userId}&offre_ID=${offreId}`);
   }
 }

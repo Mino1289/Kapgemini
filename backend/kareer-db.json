@@ -224,6 +224,15 @@
       "password": "1234",
       "profil_picture": "",
       "isRecruteur": false
+    },
+    {
+      "id": "HAEi9mF",
+      "nom": "Kretz",
+      "prenom": "Victor",
+      "email": "victor.kretz@utbm.fr",
+      "password": "1234",
+      "profil_picture": "",
+      "isRecruteur": false
     }
   ],
   "entreprises": [
@@ -1012,6 +1021,14 @@
       "candidat_ID": 0,
       "offre_ID": "10",
       "recruteur_ID": 20,
+      "date": "2024-06-19",
+      "status": 1
+    },
+    {
+      "id": "QRdFpd9",
+      "candidat_ID": "HAEi9mF",
+      "offre_ID": "8",
+      "recruteur_ID": 18,
       "date": "2024-06-19",
       "status": 1
     }

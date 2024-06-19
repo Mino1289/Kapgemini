@@ -14,7 +14,7 @@
             </div>
             <div class="offre-type" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
                 <span class="material-symbols-outlined" style="margin-right: 8px;">
-                    schedule
+                    contract
                     </span>
               <ul class="list-group list-group-flush">
               <div [ngSwitch]="offre.contrat">
@@ -64,7 +64,11 @@
         class="btn-candidature"
         style="display: flex; justify-content: right;"
       >
-        <a class="btn btn-custom" (click)="apply()">Candidature</a>
+        <a class="btn btn-custom" *ngIf="alreadyapplied; else alreadyappliedBlock2" (click)="apply()">Candidature</a>
+        <ng-template #alreadyappliedBlock2>
+          <a class="btn btn-custom" disabled>Vous avez déjà postulé.</a>
+          <!-- <a class="btn btn-custom" routerLink="/profil">Suivre votre candidature<br> sur votre profil.</a> -->
+        </ng-template>
       </div>
       </div>
     </div>
