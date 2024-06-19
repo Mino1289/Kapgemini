@@ -1,6 +1,6 @@
+
 <div class="card m-2" style="width: 18rem; height: 100%;">
     <h5 class="card-header card-title">{{offre?.titre}}</h5>
-
     <div class="card-body">
         <div class="offre-location" style="display: flex; flex-direction: row; align-items: center;">
             <span class="material-symbols-outlined"> location_on </span>
@@ -21,14 +21,6 @@
                 <li class="list-group-item" *ngSwitchCase="4">Alternance</li>
                 <li class="list-group-item" *ngSwitchDefault>?</li>
             </div>
-            <li class="list-group-item">{{offre?.marque}}</li>
-            <li class="list-group-item">
-                <div class="day-date">
-                    <span class="material-symbols-outlined">event</span>
-                    <p>{{offre.date}}</p>
-                </div>
-            </li>
-
         </ul>
     </div>
         <a class="btn btn-primary" (click)="apply()">Candidature</a>
