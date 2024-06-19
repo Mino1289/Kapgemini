@@ -1,17 +1,23 @@
-<h1 id="welcome-message">Bienvenue sur Kareer</h1>
-
+<div class="container fade-in">
 <div class="col">
     
-    <div class="col welcome-back" *ngIf="this.isLogged">
+    <!-- <div class="col welcome-back" *ngIf="this.isLogged">
         <h3>Bienvenue {{this.user?.prenom}} {{this.user?.nom}}</h3>
-    </div>
-<h3>Dernières offres publiées !</h3>
+    </div> -->
+    <h3 class="text-center">Dernières offres publiées !</h3>
+
     <div class="col derniere-offre">
-        
-        <div class="scroll-container">
+
+        <div class="scroll-container"  (scroll)="handleScroll($event)">
             <div class="cards-container">
                 <app-offre *ngFor="let offre of lastNOffre" [offre]="offre"></app-offre>
             </div>
         </div>
     </div>
+    <h3 class="text-center">Entreprises partenaires</h3>
+    <div class="col entreprises">
+    <app-entreprises></app-entreprises>
+    </div>
+
+</div>
 </div>

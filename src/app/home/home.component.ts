@@ -16,12 +16,12 @@ export class HomeComponent implements OnInit {
   isLogged: boolean = this.sessionService.isAuthenticated();
   user: User | null = null;
 
-
+  
   constructor(private offreService: OffreService, private sessionService: SessionService) {
   }
 
   ngOnInit(): void {
-    this.offreService.getNLastOffre(5).forEach(data => {
+    this.offreService.getNLastOffre(10).forEach(data => {
       this.lastNOffre = data;
     }).then(() => {
       this.lastOffre = this.lastNOffre[0];
@@ -31,5 +31,27 @@ export class HomeComponent implements OnInit {
       this.user = this.sessionService.user;
     }
   }
+  handleScroll(event: Event): void {
+    const target = event.target as HTMLElement;
+    const scrollPosition = target.scrollLeft;
+    
+    // Si la position de défilement est différente de zéro, arrête l'animation
+    if (scrollPosition !== 0) {
+      this.pauseAnimation();
+    } else {
+      this.resumeAnimation();
+    }
+  }
+
+  private pauseAnimation(): void {
+    const cardsContainer = document.querySelector('.cards-container') as HTMLElement;
+    cardsContainer.style.animationPlayState = 'paused';
+  }
+
+  private resumeAnimation(): void {
+    const cardsContainer = document.querySelector('.cards-container') as HTMLElement;
+    cardsContainer.style.animationPlayState = 'running';
+  }
+
 
 }

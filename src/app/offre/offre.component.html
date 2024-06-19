@@ -1,12 +1,12 @@
 
 <div class="card m-2" style="width: 18rem; height: 100%;">
-    <h5 class="card-header card-title">{{offre?.titre}}</h5>
+    <h5 class="card-header card-title">{{offre.titre}}</h5>
     <div class="card-body">
         <div class="offre-location" style="display: flex; flex-direction: row; align-items: center;">
             <span class="material-symbols-outlined"> location_on </span>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                {{offre?.emplacement}}</li>
+                {{offre.emplacement}}</li>
         </ul>
             </div>
             <div class="offre-type" style="display: flex; flex-direction: row; align-items: center;">
@@ -14,7 +14,7 @@
                     schedule
                     </span>
             <ul class="list-group list-group-flush">
-            <div [ngSwitch]="offre?.contrat">
+            <div [ngSwitch]="offre.contrat">
                 <li class="list-group-item" *ngSwitchCase="1">Stage</li>
                 <li class="list-group-item" *ngSwitchCase="2">CDI</li>
                 <li class="list-group-item" *ngSwitchCase="3">CDD</li>
@@ -27,7 +27,7 @@
             <span class="material-symbols-outlined"> Today </span>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                {{offre?.date}}</li>
+                {{offre.date}}</li>
         </ul>
             </div>
             <div class="button-offre-component" style="display: flex; flex-direction: column; justify-content: center;">

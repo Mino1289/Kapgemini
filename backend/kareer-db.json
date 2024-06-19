@@ -1014,6 +1014,22 @@
       "recruteur_ID": 20,
       "date": "2024-06-19",
       "status": 1
+    },
+    {
+      "id": "wLDAFxu",
+      "candidat_ID": "ZF_oLz8",
+      "offre_ID": "8",
+      "recruteur_ID": 18,
+      "date": "2024-06-19",
+      "status": 1
+    },
+    {
+      "id": "wJeP3jN",
+      "candidat_ID": "ZF_oLz8",
+      "offre_ID": "8",
+      "recruteur_ID": 18,
+      "date": "2024-06-19",
+      "status": 1
     }
   ]
 }
