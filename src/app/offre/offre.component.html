@@ -23,7 +23,16 @@
             </div>
         </ul>
     </div>
+    <div class="offre-date" style="display: flex; flex-direction: row; align-items: center;">
+            <span class="material-symbols-outlined"> Today </span>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                {{offre?.date}}</li>
+        </ul>
+            </div>
+            <div class="button-offre-component" style="display: flex; flex-direction: column; justify-content: center;">
         <a class="btn btn-primary" (click)="apply()">Candidature</a>
         <a class="btn btn-primary" (click)="readMore()">Plus d'information</a>
+    </div>
     </div>
 </div>
