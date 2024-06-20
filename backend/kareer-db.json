@@ -308,7 +308,7 @@
       "domaine": "Service Client"
     }
   ],
-"offres": [
+  "offres": [
     {
       "id": "1",
       "titre": "Ingénieur Environnement",
@@ -1041,6 +1041,14 @@
       "offre_ID": "8",
       "recruteur_ID": 18,
       "date": "2024-06-19",
+      "status": 1
+    },
+    {
+      "id": "bs2u26K",
+      "candidat_ID": "5",
+      "offre_ID": "9",
+      "recruteur_ID": 19,
+      "date": "2024-06-20",
       "status": 1
     }
   ]

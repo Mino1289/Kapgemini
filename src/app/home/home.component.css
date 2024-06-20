@@ -93,3 +93,36 @@
     margin: 10px;
     margin-bottom: 30   px;
 }
+.offre-pub {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 1.5rem; /* Augmente légèrement le margin-top pour plus d'espace */
+    font-size: 2rem; /* Utilise une unité rem pour une meilleure réactivité */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600; /* Ajoute de la densité au texte */
+    color: #333; /* Utilise une couleur gris foncé pour une meilleure lisibilité */
+    line-height: 1.4; /* Améliore l'espacement des lignes */
+    text-align: center; /* Centre le texte pour une apparence plus équilibrée */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée pour la profondeur */
+    padding: 0.5rem 1rem; /* Ajoute du padding pour un peu d'espace autour du texte */
+    border-radius: 0.5rem; /* Arrondit légèrement les coins */
+    background-color: rgba(73, 161, 72, 0.8); /* Utilise un fond blanc semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour donner de la profondeur */
+}
+
+.entre-par{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 1.5rem; /* Augmente légèrement le margin-top pour plus d'espace */
+    font-size: 2rem; /* Utilise une unité rem pour une meilleure réactivité */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600; /* Ajoute de la densité au texte */
+    color: #333; /* Utilise une couleur gris foncé pour une meilleure lisibilité */
+    line-height: 1.4; /* Améliore l'espacement des lignes */
+    text-align: center; /* Centre le texte pour une apparence plus équilibrée */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée pour la profondeur */
+    padding: 0.5rem 1rem; /* Ajoute du padding pour un peu d'espace autour du texte */
+    border-radius: 0.5rem; /* Arrondit légèrement les coins */
+    background-color: rgba(73, 161, 72, 0.8); /* Utilise un fond blanc semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour donner de la profondeur */
+}

@@ -23,7 +23,6 @@ import { EntreprisesComponent } from './entreprises/entreprises.component';
 import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.component';
 import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
 import { FooterComponent } from './footer/footer.component';
-import { ScrollDetectorDirective } from './scroll-detector.directive';
 import { MapComponent } from './map/map.component';
 
 @NgModule({
@@ -47,7 +46,6 @@ import { MapComponent } from './map/map.component';
     FormRegisterRctComponent,
     FormAjouterOffreComponent,
     FooterComponent,
-    ScrollDetectorDirective,
     MapComponent,
   ],
   imports: [

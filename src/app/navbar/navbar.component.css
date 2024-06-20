@@ -1,30 +1,75 @@
+/* Navbar Container */
 .navbar {
-    background-color: #f8f9fa; /* Light grey background */
-    border-bottom: 1px solid #e0e0e0; /* Subtle border at the bottom */
+    background: linear-gradient(90deg, rgb(148, 227, 165) 0%, rgb(0, 148, 59) 100%);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 .navbar-brand img {
     margin-right: 10px; /* Space between logo and text */
 }
+
+/* Navbar Links */
 .nav-link {
-    color: #343a40; /* Dark grey color for links */
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease, background 0.3s ease;
 }
+
 .nav-link:hover {
-    color: #007bff; /* Blue color on hover */
+    color: #000000;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px 10px;
 }
+
+/* Navbar Toggler */
 .navbar-toggler {
     border: none; /* Remove default border from toggler */
 }
+
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     /* Custom icon color */
 }
 
-.user-inf{
+/* User Info */
+.user-inf {
     display: flex;
-    justify-content: center;
     align-items: center;
+    color: #ffffff;
 }
 
 .user-name {
-    margin-right: 10px; /* Ajoute un espace de 10px à droite du span */
+    margin-right: 10px; /* Add a 10px space to the right of the span */
+    font-weight: bold;
+}
+
+.user-inf img {
+    border: 2px solid #ffffff;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .user-inf {
+        justify-content: center;
+        margin-top: 10px;
+    }
 }

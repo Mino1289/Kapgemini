@@ -1,4 +1,4 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OffreService } from '../offre.service';
 import { Offre } from 'src/models/Offre';
 import { SessionService } from '../session.service';
@@ -20,16 +20,7 @@ export class HomeComponent implements OnInit {
   }
   isFooterVisible = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    const pos = (document.documentElement.scrollTop || document.body.scrollTop) + window.innerHeight;
-    const max = document.documentElement.scrollHeight || document.body.scrollHeight;
-    if (pos >= max) {
-      this.isFooterVisible = true;
-    } else {
-      this.isFooterVisible = false;
-    }
-  }
+ 
   ngOnInit(): void {
     this.offreService.getNLastOffre(10).forEach(data => {
       this.lastNOffre = data;

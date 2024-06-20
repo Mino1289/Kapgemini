@@ -1,11 +1,7 @@
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    position: relative; 
     z-index: 1000;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparence noire à 50% */
+    background-color: rgba(59, 173, 87, 0.5); /* Transparence noire à 50% */
     text-align: center;
 
   }
