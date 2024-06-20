@@ -1,0 +1,45 @@
+<div class="container">
+
+    <form (ngSubmit)="ajouterEntreprise()" class="row g-3 mt-3 p-4 bg-light border rounded shadow-sm">
+        <h1 class="text-center mb-4">Ajouter une entreprise</h1>
+
+        <div *ngIf="successMessage" class="alert alert-success">
+            {{successMessage}}
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger">
+            {{errorMessage}}
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputNom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="inputNom" placeholder="Google, Arm, STMicroelectronics..." name="nom" [(ngModel)]="entreprise.nom">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputDomaine" class="form-label">Domaine</label>
+            <input type="text" class="form-control" id="inputDomaine" placeholder="Informatique, Electronique, ..." name="domaine" [(ngModel)]="entreprise.domaine">
+        </div>
+
+
+        <div class="col-md-6">
+            <label for="inputDomaine" class="form-label">Nombre d'employés</label>
+            <input type="number" class="form-control" id="inputDomaine" placeholder="253" name="nbremploye" [(ngModel)]="entreprise.nombre_employe">
+        </div>
+
+
+        <div class="col-md-6">
+            <label for="inputVille" class="form-label">Ville</label>
+            <input type="text" class="form-control" id="inputVille" placeholder="Paris" name="emplacement" [(ngModel)]="entreprise.emplacement">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputEmplacement" class="form-label">Emplacement</label>
+            <input type="text" class="form-control" id="inputEmplacement" placeholder="1 rue de la république, Paris" name="emplacement_exact" [(ngModel)]="entreprise.emplacement_exact">
+        </div>
+
+        <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Ajouter l'entreprise</button>
+        </div>
+    </form>
+</div>

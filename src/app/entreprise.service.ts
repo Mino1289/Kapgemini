@@ -24,4 +24,8 @@ export class EntrepriseService {
   getNLastEntreprises(n: number): Observable<Entreprise[]> {
     return this.http.get<Entreprise[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=${n}`);
   }
+
+  ajouterEntreprise(entreprise: Entreprise): Observable<Entreprise> {
+    return this.http.post<Entreprise>(this.apiURL, entreprise);
+  }
 }

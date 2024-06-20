@@ -25,6 +25,7 @@ import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-off
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { EntrepriseFullComponent } from './entreprise-full/entreprise-full.component';
+import { FormAjouterEntrepriseComponent } from './form-ajouter-entreprise/form-ajouter-entreprise.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { EntrepriseFullComponent } from './entreprise-full/entreprise-full.compo
     FormAjouterOffreComponent,
     FooterComponent,
     MapComponent,
+    FormAjouterEntrepriseComponent,
   ],
   imports: [
     BrowserModule,

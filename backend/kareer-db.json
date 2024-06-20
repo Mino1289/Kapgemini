@@ -314,6 +314,14 @@
       "emplacemment": "Lille",
       "emplacement_exact": "50 Rue Faidherbe, 59800 Lille",
       "domaine": "Service Client"
+    },
+    {
+      "id": 11,
+      "nom": "Google",
+      "nombre_employe": 72000,
+      "emplacement": "Mountain View",
+      "emplacement_exact": "Googleplex, 1600 Amphitheatre Pkwy, Mountain View, CA 94043, États-Unis",
+      "domaine": "Logiciel"
     }
   ],
   "offres": [
@@ -448,6 +456,17 @@
       "date": "2024-06-19",
       "recruteur_ID": 24,
       "entreprise_ID": 2
+    },
+    {
+      "id": 13,
+      "titre": "Stage Ingénieur",
+      "contrat": "1",
+      "emplacement": "Grenoble",
+      "emplacement_exact": "",
+      "description": "Bosse pacher",
+      "date": "2024-06-20",
+      "recruteur_ID": "24",
+      "entreprise_ID": "11"
     }
   ],
   "candidatures": [

@@ -29,7 +29,12 @@
 
         <div class="col-md-6">
             <label for="inputEmplacement" class="form-label">Emplacement</label>
-            <input type="text" class="form-control" id="inputEmplacement" placeholder="Paris, ..." name="emplacement" [(ngModel)]="offre.emplacement">
+            <input type="text" class="form-control" id="inputEmplacement" placeholder="Paris" name="emplacement" [(ngModel)]="offre.emplacement">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputEmplacement" class="form-label">Adresse complete</label>
+            <input type="text" class="form-control" id="inputEmplacement" placeholder="x Rue de Machin, 12340 Ville, Pays" name="emplacement" [(ngModel)]="offre.emplacement_exact">
         </div>
 
         <div class="col-md-6">
