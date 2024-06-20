@@ -12,7 +12,7 @@ import { OffreService } from '../offre.service';
   styleUrls: ['./form-ajouter-offre.component.css']
 })
 export class FormAjouterOffreComponent implements OnInit {
-  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
+  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '','', 0, 0);
   entreprises: Entreprise[] = []; // pour avoir le nom de tts les entreprises
   successMessage: string = '';
   errorMessage: string = '';
@@ -41,7 +41,7 @@ export class FormAjouterOffreComponent implements OnInit {
         this.errorMessage = 'Erreur lors de l\'ajout de l\'offre';
       }
     });
-    this.offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
+    this.offre = new Offre(0, '', Contrat.INCONNU, '', '', '','', 0, 0);
   }
 
 }

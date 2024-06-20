@@ -1,0 +1,8 @@
+.footer {
+    position: relative; 
+    z-index: 1000;
+    background-color: rgba(59, 173, 87, 0.5); /* Transparence noire à 50% */
+    text-align: center;
+
+  }
+  

@@ -1,0 +1,63 @@
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid white;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.loading-overlay{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text{
+    margin-top: 1.5rem; /* Augmente légèrement le margin-top pour plus d'espace */
+    font-size: 2rem; /* Utilise une unité rem pour une meilleure réactivité */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600; /* Ajoute de la densité au texte */
+    color: #333; /* Utilise une couleur gris foncé pour une meilleure lisibilité */
+    line-height: 1.4; /* Améliore l'espacement des lignes */
+    text-align: center; /* Centre le texte pour une apparence plus équilibrée */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée pour la profondeur */
+    padding: 0.5rem 1rem; /* Ajoute du padding pour un peu d'espace autour du texte */
+    border-radius: 0.5rem; /* Arrondit légèrement les coins */
+    background-color: rgba(255, 255, 255, 0.8); /* Utilise un fond blanc semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour donner de la profondeur */
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 122, 89);
+    width: 100%;
+    height: 100%;
+}

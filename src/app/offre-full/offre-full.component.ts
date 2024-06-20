@@ -12,7 +12,7 @@ import { CandidatureService } from '../candidature.service';
   styleUrls: ['./offre-full.component.css']
 })
 export class OffreFullComponent implements OnInit {
-  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
+  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '','', 0, 0);
   alreadyapplied: boolean = false;
 
   constructor(private router: Router, activatedRoute: ActivatedRoute, offreService: OffreService, private sessionService: SessionService, private candidatureService: CandidatureService) {

@@ -35,7 +35,7 @@
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .btn-submit-offre-list {
-    background-color: #007bff;
+    background-color: #66b679;
     color: white;
     border: none;
     transition: background-color 0.3s ease;
@@ -44,7 +44,7 @@
     width: 100%;
 }
 .btn-submit-offre-list:hover {
-    background-color: #0056b3;
+    background-color: #00762d;
 }
 .form-group {
     margin-bottom: 1rem;

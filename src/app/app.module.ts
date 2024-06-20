@@ -22,6 +22,8 @@ import { EntrepriseComponent } from './entreprise/entreprise.component';
 import { EntreprisesComponent } from './entreprises/entreprises.component';
 import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.component';
 import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
+import { FooterComponent } from './footer/footer.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-off
     EntrepriseComponent,
     EntreprisesComponent,
     FormRegisterRctComponent,
-    FormAjouterOffreComponent
+    FormAjouterOffreComponent,
+    FooterComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

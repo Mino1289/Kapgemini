@@ -11,7 +11,7 @@ import { Offre } from 'src/models/Offre';
 })
 export class OffreService {
   private apiURL = 'http://localhost:3000/offres';
-  offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '', 0, 0);
+  offre: Offre = new Offre(0, '', Contrat.INCONNU, '','', '', '', 0, 0);
 
   constructor(private http: HttpClient) { }
 

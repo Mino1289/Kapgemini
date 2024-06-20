@@ -10,7 +10,8 @@ import { User } from 'src/models/User';
 export class NavbarComponent implements OnInit {
   isAuth: boolean = this.sessionService.isAuthenticated();
   user: User | null = null;
-  
+  isLogged: boolean = this.sessionService.isAuthenticated();
+
   constructor(private sessionService: SessionService) { }
 
   ngOnInit(): void {
