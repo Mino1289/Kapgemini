@@ -24,6 +24,7 @@ import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.
 import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollDetectorDirective } from './scroll-detector.directive';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ScrollDetectorDirective } from './scroll-detector.directive';
     FormAjouterOffreComponent,
     FooterComponent,
     ScrollDetectorDirective,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

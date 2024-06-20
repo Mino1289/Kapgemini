@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { OffreService } from '../offre.service';
 import { Offre } from 'src/models/Offre';
 import { SessionService } from '../session.service';
 import { User } from 'src/models/User';
-import { Contrat } from 'src/models/Contrat';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +18,18 @@ export class HomeComponent implements OnInit {
   
   constructor(private offreService: OffreService, private sessionService: SessionService) {
   }
+  isFooterVisible = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const pos = (document.documentElement.scrollTop || document.body.scrollTop) + window.innerHeight;
+    const max = document.documentElement.scrollHeight || document.body.scrollHeight;
+    if (pos >= max) {
+      this.isFooterVisible = true;
+    } else {
+      this.isFooterVisible = false;
+    }
+  }
   ngOnInit(): void {
     this.offreService.getNLastOffre(10).forEach(data => {
       this.lastNOffre = data;
