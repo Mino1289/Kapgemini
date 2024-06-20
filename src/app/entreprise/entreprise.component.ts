@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Entreprise } from 'src/models/Entreprise';
 
 @Component({
@@ -8,9 +9,12 @@ import { Entreprise } from 'src/models/Entreprise';
 })
 export class EntrepriseComponent implements OnInit {
   @Input() entreprise!: Entreprise;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  readMore() {
+    this.router.navigate(['/', 'entreprise', this.entreprise.id]);
+  }
 }

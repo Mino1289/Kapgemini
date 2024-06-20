@@ -12,6 +12,7 @@ import { ProfilComponent } from './profil/profil.component';
 import { EntreprisesComponent } from './entreprises/entreprises.component';
 import { FormRegisterRctComponent } from './form-register-rct/form-register-rct.component';
 import { FormAjouterOffreComponent } from './form-ajouter-offre/form-ajouter-offre.component';
+import { EntrepriseFullComponent } from './entreprise-full/entreprise-full.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'entreprises', component: EntreprisesComponent },
   { path: 'offre/:id', component: OffreFullComponent },
   { path: 'candidature/:id', component: CandidatureComponent },
+  { path: 'entreprise/:id', component: EntrepriseFullComponent },
   { path: 'connexion', component: FormConnexionComponent },
   { path: 'register', component: FormRegisterComponent },
   { path: 'register-rct', component: FormRegisterRctComponent },

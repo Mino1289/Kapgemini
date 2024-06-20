@@ -44,6 +44,10 @@ export class OffreService {
     return this.http.get<Offre[]>(`${this.apiURL}/?_sort=id&_order=desc&_limit=${n}`);
   }
 
+  getOffresByEntreprise(entrepriseID: number): Observable<Offre[]> {
+    return this.http.get<Offre[]>(`${this.apiURL}/?entreprise_ID=${entrepriseID}`);
+  }
+
   ajouterOffre(offre: Offre): Observable<Offre> {
     return this.http.post<Offre>(this.apiURL, offre);
   }

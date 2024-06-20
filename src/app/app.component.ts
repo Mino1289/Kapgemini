@@ -15,6 +15,6 @@ export class AppComponent implements OnInit {
         // Simule un chargement asynchrone (par exemple, chargement de données depuis un service)
         setTimeout(() => {
             this.isLoading = false;
-        }, 5000); // Mettez le délai approprié selon votre besoin
+        }, 1500); // Mettez le délai approprié selon votre besoin
     }
 }
