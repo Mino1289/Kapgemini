@@ -4,72 +4,57 @@
     <div class="card card-custom">
       <h5 style="font-size: 2em; padding-left: 2%">{{ offre.titre }}</h5>
       <div class="card-body card-body-custom">
-          <div class="type-offre" style="padding-left: 3%; display: flex; flex-direction: row;">
-            <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center;">
-              <span class="material-symbols-outlined" style="margin-right: 8px;"> location_on </span>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-custom">{{ offre.emplacement }}</li>
-              </ul>
-              
-            </div>
-            <div class="offre-type" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
-                <span class="material-symbols-outlined" style="margin-right: 8px;">
-                    contract
-                    </span>
-              <ul class="list-group list-group-flush">
+        <div class="type-offre" style="padding-left: 3%; display: flex; flex-direction: row;">
+          <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center;">
+            <span class="material-symbols-outlined" style="margin-right: 8px;"> location_on </span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-custom">{{ offre.emplacement }}</li>
+            </ul>
+
+          </div>
+          <div class="offre-type" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
+            <span class="material-symbols-outlined" style="margin-right: 8px;">
+              contract
+            </span>
+            <ul class="list-group list-group-flush">
               <div [ngSwitch]="offre.contrat">
-                <li
-                  class="list-group-item list-group-item-custom"
-                  *ngSwitchCase="1"
-                >
+                <li class="list-group-item list-group-item-custom" *ngSwitchCase="1">
                   Stage
                 </li>
-                <li
-                  class="list-group-item list-group-item-custom"
-                  *ngSwitchCase="2"
-                >
+                <li class="list-group-item list-group-item-custom" *ngSwitchCase="2">
                   CDI
                 </li>
-                <li
-                  class="list-group-item list-group-item-custom"
-                  *ngSwitchCase="3"
-                >
+                <li class="list-group-item list-group-item-custom" *ngSwitchCase="3">
                   CDD
                 </li>
-                <li
-                  class="list-group-item list-group-item-custom"
-                  *ngSwitchCase="4"
-                >
+                <li class="list-group-item list-group-item-custom" *ngSwitchCase="4">
                   Alternance
                 </li>
-                <li
-                  class="list-group-item list-group-item-custom"
-                  *ngSwitchDefault
-                >
+                <li class="list-group-item list-group-item-custom" *ngSwitchDefault>
                   ?
                 </li>
               </div>
             </ul>
-        </div>
-        <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
-          <span class="material-symbols-outlined" style="margin-right: 8px;"> Today</span>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-custom">{{ offre.date }}</li>
-          </ul>
-          
-        </div>
           </div>
+          <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
+            <span class="material-symbols-outlined" style="margin-right: 8px;"> Today</span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-custom">{{ offre.date }}</li>
+            </ul>
+
+          </div>
+        </div>
         <p style="padding-left: 3%; margin-top: 3%;">{{offre.description}}</p>
-        <div
-        class="btn-candidature"
-        style="display: flex; justify-content: right;"
-      >
-        <a class="btn btn-custom" *ngIf="alreadyapplied; else alreadyappliedBlock2" (click)="apply()">Candidature</a>
-        <ng-template #alreadyappliedBlock2>
-          <a class="btn btn-custom" disabled>Vous avez déjà postulé.</a>
-          <!-- <a class="btn btn-custom" routerLink="/profil">Suivre votre candidature<br> sur votre profil.</a> -->
-        </ng-template>
-      </div>
+        <div class="btn-candidature" style="display: flex; justify-content: right;">
+          <a class="btn btn-custom" *ngIf="!alreadyapplied; else alreadyappliedBlock2" (click)="apply()">Candidature</a>
+          <ng-template #alreadyappliedBlock2>
+            <a class="btn btn-custom" disabled>Vous avez déjà postulé.</a>
+            <!-- <a class="btn btn-custom" routerLink="/profil">Suivre votre candidature<br> sur votre profil.</a> -->
+          </ng-template>
+        </div>
+        <p style="padding-left: 3%; margin-top: 3%;">
+          {{nbCandidatures}} candidats ont déjà postulé.
+        </p>
       </div>
     </div>
   </div>

@@ -14,6 +14,7 @@ import { CandidatureService } from '../candidature.service';
 export class OffreFullComponent implements OnInit {
   offre: Offre = new Offre(0, '', Contrat.INCONNU, '', '', '','', 0, 0);
   alreadyapplied: boolean = false;
+  nbCandidatures: number = 0;
 
   constructor(private router: Router, activatedRoute: ActivatedRoute, offreService: OffreService, private sessionService: SessionService, private candidatureService: CandidatureService) {
     offreService.getOffreById(parseInt(activatedRoute.snapshot.paramMap.get('id') || '0')).forEach(offre => this.offre = offre);
@@ -22,6 +23,10 @@ export class OffreFullComponent implements OnInit {
   ngOnInit(): void {
     this.candidatureService.alreadyApplied(this.sessionService.user?.id, this.offre.id).forEach(candidatures => {
       this.alreadyapplied = candidatures.length > 0;
+    }).then(() => {
+      this.candidatureService.getCandidaturesByOffre(this.offre.id).forEach(candidatures => {
+        this.nbCandidatures = candidatures.length;
+      });
     });
   }
 
