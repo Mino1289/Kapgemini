@@ -11,7 +11,7 @@ import { OffreService } from '../offre.service';
   styleUrls: ['./entreprise-full.component.css']
 })
 export class EntrepriseFullComponent implements OnInit {
-  entreprise: Entreprise = new Entreprise(0, '', '', 0, '', '');
+  entreprise: Entreprise = new Entreprise(0, '', 0, '', '', '');
   offres: Offre[] = [];
   
   constructor(private activatedRoute: ActivatedRoute, private entrepriseService: EntrepriseService, private offreService: OffreService) {
