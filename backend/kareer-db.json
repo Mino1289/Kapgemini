@@ -314,7 +314,8 @@
       "titre": "Ingénieur Environnement",
       "contrat": 2,
       "emplacement": "Lyon",
-      "description": "this is a goooood job",
+      "emplacement_exact": "10 Rue de la République, 69001 Lyon",
+      "description": "Rejoignez notre équipe dynamique en tant qu'Ingénieur Environnement à Lyon. Vous serez responsable de la gestion et de l'optimisation des projets environnementaux, en veillant à la conformité réglementaire et à la durabilité.",
       "date": "2024-06-04",
       "recruteur_ID": 11,
       "entreprise_ID": 1
@@ -324,7 +325,8 @@
       "titre": "Responsable Ressources Humaines",
       "contrat": 2,
       "emplacement": "Bordeaux",
-      "description": "this is a goooood job",
+      "emplacement_exact": "15 Cours de l'Intendance, 33000 Bordeaux",
+      "description": "Nous recherchons un Responsable Ressources Humaines passionné pour diriger notre stratégie RH à Bordeaux. Vous serez responsable du développement organisationnel et de la gestion des talents au sein de notre entreprise.",
       "date": "2024-06-04",
       "recruteur_ID": 12,
       "entreprise_ID": 2
@@ -334,7 +336,8 @@
       "titre": "Chercheur en IA",
       "contrat": 2,
       "emplacement": "Nice",
-      "description": "this is a goooood job",
+      "emplacement_exact": "20 Avenue Jean Médecin, 06000 Nice",
+      "description": "Joignez-vous à notre équipe de recherche en IA à Nice. Vous participerez à des projets innovants en intelligence artificielle, en développant des algorithmes avancés et en contribuant à notre stratégie technologique.",
       "date": "2024-06-03",
       "recruteur_ID": 13,
       "entreprise_ID": 3
@@ -344,7 +347,8 @@
       "titre": "Agent de Sécurité",
       "contrat": 3,
       "emplacement": "Toulouse",
-      "description": "this is a goooood job",
+      "emplacement_exact": "5 Place du Capitole, 31000 Toulouse",
+      "description": "Nous recrutons un Agent de Sécurité expérimenté pour assurer la sûreté et la sécurité de nos installations à Toulouse. Rejoignez notre équipe dédiée à la protection des biens et des personnes.",
       "date": "2024-06-03",
       "recruteur_ID": 14,
       "entreprise_ID": 4
@@ -354,7 +358,8 @@
       "titre": "Acheteur Industriel",
       "contrat": 2,
       "emplacement": "Marseille",
-      "description": "this is a goooood job",
+      "emplacement_exact": "25 Boulevard de la Libération, 13001 Marseille",
+      "description": "Nous cherchons un Acheteur Industriel motivé pour renforcer notre équipe d'approvisionnement à Marseille. Vous serez responsable de la gestion des fournisseurs et de l'optimisation des coûts d'achat.",
       "date": "2024-06-02",
       "recruteur_ID": 15,
       "entreprise_ID": 5
@@ -364,7 +369,8 @@
       "titre": "Assistant Ressources Humaines",
       "contrat": 1,
       "emplacement": "Nantes",
-      "description": "this is a goooood job",
+      "emplacement_exact": "30 Rue Crébillon, 44000 Nantes",
+      "description": "Rejoignez notre équipe en tant qu'Assistant Ressources Humaines à Nantes. Vous soutiendrez nos efforts dans le recrutement, la formation et le développement des talents au sein de notre organisation.",
       "date": "2024-06-02",
       "recruteur_ID": 16,
       "entreprise_ID": 6
@@ -374,7 +380,8 @@
       "titre": "Technicien de Maintenance",
       "contrat": 2,
       "emplacement": "Montpellier",
-      "description": "this is a goooood job",
+      "emplacement_exact": "35 Rue de l'Aiguillerie, 34000 Montpellier",
+      "description": "Nous recherchons un Technicien de Maintenance compétent pour assurer la disponibilité et le bon fonctionnement de nos équipements à Montpellier. Joignez notre équipe passionnée par la technologie et l'innovation.",
       "date": "2024-06-01",
       "recruteur_ID": 17,
       "entreprise_ID": 7
@@ -384,7 +391,8 @@
       "titre": "Logisticien",
       "contrat": 3,
       "emplacement": "Strasbourg",
-      "description": "this is a goooood job",
+      "emplacement_exact": "40 Grand'Rue, 67000 Strasbourg",
+      "description": "Rejoignez-nous en tant que Logisticien à Strasbourg et contribuez à notre chaîne d'approvisionnement efficace. Vous serez responsable de la gestion des flux de marchandises et de l'optimisation des processus logistiques.",
       "date": "2024-06-01",
       "recruteur_ID": 18,
       "entreprise_ID": 8
@@ -394,7 +402,8 @@
       "titre": "Chargé de Recrutement",
       "contrat": 2,
       "emplacement": "Rennes",
-      "description": "this is a goooood job",
+      "emplacement_exact": "45 Rue Saint-Georges, 35000 Rennes",
+      "description": "Nous recrutons un Chargé de Recrutement pour soutenir nos initiatives de recrutement à Rennes. Vous serez responsable de la sélection des talents et de l'organisation des processus d'entrevue.",
       "date": "2024-06-04",
       "recruteur_ID": 19,
       "entreprise_ID": 9
@@ -404,7 +413,8 @@
       "titre": "Responsable Service Client",
       "contrat": 2,
       "emplacement": "Lille",
-      "description": "this is a goooood job",
+      "emplacement_exact": "50 Rue Faidherbe, 59800 Lille",
+      "description": "Joignez notre équipe en tant que Responsable Service Client à Lille. Vous dirigerez notre équipe de support clientèle pour assurer une expérience client exceptionnelle.",
       "date": "2024-06-03",
       "recruteur_ID": 20,
       "entreprise_ID": 10
@@ -412,22 +422,24 @@
     {
       "id": "11",
       "titre": "Ingénieur informatique",
-      "contrat": "2",
+      "contrat": 2,
       "emplacement": "Grenoble",
-      "description": "C++",
+      "emplacement_exact": "55 Rue Félix Poulat, 38000 Grenoble",
+      "description": "Nous recherchons un Ingénieur Informatique passionné par le développement logiciel à Grenoble. Vous aurez l'occasion de travailler sur des projets innovants en C++ et de contribuer à notre plateforme technologique.",
       "date": "2024-06-17",
       "recruteur_ID": 24,
-      "entreprise_ID": "5"
+      "entreprise_ID": 5
     },
     {
-      "id": 0,
+      "id": "0",
       "titre": "offre de stage",
-      "contrat": "1",
+      "contrat": 1,
       "emplacement": "Metz",
-      "description": "Offre de stage dans l'IA",
+      "emplacement_exact": "60 Rue Serpenoise, 57000 Metz",
+      "description": "Opportunité passionnante de stage dans le domaine de l'intelligence artificielle à Metz. Vous travaillerez sur des projets novateurs sous la supervision de nos experts en IA.",
       "date": "2024-06-19",
-      "recruteur_ID": "24",
-      "entreprise_ID": "2"
+      "recruteur_ID": 24,
+      "entreprise_ID": 2
     }
   ],
   "candidatures": [

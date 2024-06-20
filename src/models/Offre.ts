@@ -6,6 +6,7 @@ export class Offre {
       public titre: string,
       public contrat: Contrat,
       public emplacement: string,
+      public emplacement_exact : string,
       public description: string,
       public date: string,
       public recruteur_ID: number,
@@ -15,6 +16,7 @@ export class Offre {
       this.titre = titre;
       this.contrat = contrat;
       this.emplacement = emplacement;
+      this.emplacement_exact = emplacement_exact;
       this.description = description;
       this.date = date;
       this.recruteur_ID = recruteur_ID;

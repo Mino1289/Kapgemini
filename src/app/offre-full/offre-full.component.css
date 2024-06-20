@@ -8,7 +8,7 @@
     display: flex;
     width: 100%;
     max-width: 600px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #62d382;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden; 
@@ -19,7 +19,7 @@
 }
 .color-strip {
     width: 3rem; 
-    background-color: #408cc4; 
+    background-color: #4b9244; 
 }
 .card-header-custom {
     color: #333;
