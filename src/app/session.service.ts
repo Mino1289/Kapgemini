@@ -29,4 +29,8 @@ export class SessionService {
   isAuthenticated(): boolean {
     return this._user !== null || this.user !== null;
   }
+
+  isRecruteur(): boolean {
+    return this.user?.isRecruteur || false;
+  }
 }

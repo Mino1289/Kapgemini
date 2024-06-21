@@ -48,7 +48,15 @@ export class OffreService {
     return this.http.get<Offre[]>(`${this.apiURL}/?entreprise_ID=${entrepriseID}`);
   }
 
+  getOffresByRecruteurId(recruteurID: number): Observable<Offre[]> {
+    return this.http.get<Offre[]>(`${this.apiURL}/?recruteur_ID=${recruteurID}`);
+  }
+
   ajouterOffre(offre: Offre): Observable<Offre> {
     return this.http.post<Offre>(this.apiURL, offre);
+  }
+
+  supprimerOffre(id: number): Observable<Offre> {
+    return this.http.delete<Offre>(`${this.apiURL}/${id}`);
   }
 }

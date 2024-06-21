@@ -15,8 +15,9 @@ import { Candidature } from 'src/models/Candidature';
 export class ProfilComponent implements OnInit {
   user: User | null = this.sessionService.user;
   candidatures: Candidature[] = [];
+  offres: Offre[] = [];
 
-  constructor(private router: Router, private sessionService: SessionService, private candidatureService: CandidatureService) {
+  constructor(private router: Router, private sessionService: SessionService, private candidatureService: CandidatureService, private offreService: OffreService) {
     if (!this.sessionService.isAuthenticated() || this.user === null) {
       this.router.navigate(['/', 'connexion']);
     }
@@ -25,9 +26,8 @@ export class ProfilComponent implements OnInit {
       this.candidatureService.getCandidatureByUserId(id).forEach(candidatures => { this.candidatures = candidatures });
     } else if (id !== undefined && this.user?.isRecruteur) {
       this.candidatureService.getCandidaturesByRecruteurId(id).forEach(candidatures => { this.candidatures = candidatures });
+      this.offreService.getOffresByRecruteurId(id).forEach(offres => { this.offres = offres });
     }
-
-
   }
 
   ngOnInit(): void {

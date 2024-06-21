@@ -46,17 +46,24 @@
         </div>
         <p style="padding-left: 3%; margin-top: 3%;">{{offre.description}}</p>
         <div class="btn-candidature" style="display: flex; justify-content: right;">
-          <a class="btn btn-custom" *ngIf="!alreadyapplied; else alreadyappliedBlock2" (click)="apply()">Candidature</a>
+          <a class="btn btn-custom" *ngIf="!alreadyapplied && !user?.isRecruteur; else alreadyappliedBlock2" (click)="apply()">Candidature</a>
           <ng-template #alreadyappliedBlock2>
-            <a class="btn btn-custom" disabled>Vous avez déjà postulé.</a>
+            <a class="btn btn-custom" *ngIf="alreadyapplied && !user?.isRecruteur" disabled>Vous avez déjà postulé.</a>
+            <a class="btn btn-danger" *ngIf="user?.isRecruteur && user?.id == offre.recruteur_ID" (click)="supprimer()">Supprimer votre offre</a>
             <!-- <a class="btn btn-custom" routerLink="/profil">Suivre votre candidature<br> sur votre profil.</a> -->
           </ng-template>
         </div>
         <p style="padding-left: 3%; margin-top: 3%;">
-          {{nbCandidatures}} candidats ont déjà postulé.
+          {{candidatures.length}} candidat(s) ont déjà postulé.
         </p>
       </div>
     </div>
   </div>
   <app-map [nameCity]="offre.emplacement" [location]="offre.emplacement_exact"></app-map>
+  <div *ngIf="user?.isRecruteur && user?.id == offre.recruteur_ID">
+    <h3 class="title" *ngIf="candidatures.length > 0">Les candidatures à cette offre</h3>
+    <div class="row row-cols-auto">
+      <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature" class="m-3"></app-candidature-full>
+    </div>
+  </div>
 </div>

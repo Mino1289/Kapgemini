@@ -1,7 +1,7 @@
 <div class="card text-center" style="align-items: center; justify-content: center;">
     <div class="card-body" *ngIf="!userConnected?.isRecruteur; else recruteurView">
         <h3 class="card-title">{{offre?.titre}}</h3>
-        <div [ngSwitch]="candidature.status" *ngIf="">
+        <div [ngSwitch]="candidature.status">
             <span class="badge text-bg-info" *ngSwitchCase="1">En attente</span>
             <span class="badge text-bg-success" *ngSwitchCase="2">Accepté !</span>
             <span class="badge text-bg-danger" *ngSwitchCase="3">Refusé</span>

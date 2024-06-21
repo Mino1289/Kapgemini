@@ -1,8 +1,8 @@
 <div class="container">
-    <div *ngIf="!user?.isRecruteur; else isRecruteurBlock">
-
-        <app-user [user]="this.user" class="m-3"></app-user>
-        
+    <div>
+        <h2 class="title">Bonjour, {{user?.prenom}}</h2>
+    </div>
+    <div *ngIf="!user?.isRecruteur; else isRecruteurBlock">        
         <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
             <h3 class="title">Vos candidatures</h3>
             <div class="row row-cols-auto" style="display: flex; justify-content: center;">
@@ -19,11 +19,8 @@
         </ng-template>
     </div>
     <ng-template #isRecruteurBlock>
-        <div class="row m-3">
-            <app-user [user]="this.user" class="col"></app-user>
-            <div class="col">
-                <button class="btn btn-primary" routerLink="/ajouter-offre">Publier une offre</button>
-            </div>
+        <div class="m-3">
+            <button class="btn btn-primary" routerLink="/ajouter-offre">Publier une offre</button>
         </div>
         <div class="m-3" *ngIf="candidatures.length > 0; else noOffreToManage">
             <h3 class="title">Les candidatures à vos offres d'emplois</h3>
@@ -39,6 +36,10 @@
                 Publier une offre
             </button>
         </ng-template>
+        <h3 class="title">Vos offres d'emplois</h3>
+        <div class="row row-cols-auto" style="display: flex; justify-content: center;">
+            <app-offre *ngFor="let offre of offres" [offre]="offre" class="m-3"></app-offre>
+        </div>
     </ng-template>
         
 </div>

@@ -456,17 +456,6 @@
       "date": "2024-06-19",
       "recruteur_ID": 24,
       "entreprise_ID": 2
-    },
-    {
-      "id": 13,
-      "titre": "Stage Ingénieur",
-      "contrat": "1",
-      "emplacement": "Grenoble",
-      "emplacement_exact": "",
-      "description": "Bosse pacher",
-      "date": "2024-06-20",
-      "recruteur_ID": "24",
-      "entreprise_ID": "11"
     }
   ],
   "candidatures": [
@@ -548,7 +537,7 @@
       "offre_ID": 3,
       "recruteur_ID": 24,
       "date": "2024-06-15",
-      "status": 1
+      "status": 3
     },
     {
       "id": 11,

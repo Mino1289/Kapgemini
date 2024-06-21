@@ -31,9 +31,11 @@
         </ul>
             </div>
             <div class="button-offre-component" style="display: flex; flex-direction: column; justify-content: center;">
-        <a class="btn btn-primary" *ngIf="!alreadyApplied; else alreadyAppliedBlock" (click)="apply()">Candidature</a>
-        <ng-template #alreadyAppliedBlock>
-            <a class="btn btn-primary" disabled>Vous avez déjà postulé.</a>
+        <a class="btn btn-primary" *ngIf="!alreadyApplied && !user?.isRecruteur; else elseBlock" (click)="apply()">Candidature</a>
+        <ng-template #elseBlock>
+
+            <a class="btn btn-primary" *ngIf="alreadyApplied && !user?.isRecruteur" disabled>Vous avez déjà postulé.</a>
+            <a class="btn btn-danger" *ngIf="user?.isRecruteur && user?.id == offre.recruteur_ID" (click)="supprimer()">Supprimer votre offre</a>
             <!-- <a class="btn btn-primary" routerLink="/profil">Suivre votre candidature sur votre profil.</a> -->
         </ng-template>
         <a class="btn btn-primary" (click)="readMore()">Plus d'information</a>
