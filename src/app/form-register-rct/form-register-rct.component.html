@@ -7,7 +7,7 @@ public isRecruteur: boolean -->
 
 <div class="container">
 
-    <form (ngSubmit)="register()" class="row g-3 mt-3 form">
+    <form (ngSubmit)="register()" class="row g-3 mt-3 p-4 bg-light border rounded shadow-sm">
         <h1 class="text-center">Créer un compte recruteur</h1>
 
         <div *ngIf="successMessage" class="alert alert-success">
@@ -41,9 +41,9 @@ public isRecruteur: boolean -->
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">S'enregistrer</button>
+            <button type="submit" class="btn btn-primary btn-lg">S'enregistrer</button>
         </div>
     </form>
 
-    <a routerLink="/register-rct">Créer un compte Recruteur.</a>
+    <p class="text-center mt-3" style="color: white;"><a routerLink="/register-rct">Créer un compte Recruteur</a></p>
 </div>

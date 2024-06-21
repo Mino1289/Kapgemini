@@ -1,10 +1,10 @@
 <div class="card-full-centered">
   <div class="card-custom-container m-2">
     <div class="color-strip"></div>
-    <div class="card card-custom">
+    <div class="card card-custom rounded-0">
       <h5 style="font-size: 2em; padding-left: 2%">{{ offre.titre }}</h5>
       <div class="card-body card-body-custom">
-        <div class="type-offre" style="padding-left: 3%; display: flex; flex-direction: row;">
+        <div class="type-offre" style="padding-left: 3%; display: flex; flex-direction: row; justify-content: space-between;">
           <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center;">
             <span class="material-symbols-outlined" style="margin-right: 8px;"> location_on </span>
             <ul class="list-group list-group-flush">
@@ -12,7 +12,7 @@
             </ul>
 
           </div>
-          <div class="offre-type" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
+          <div class="offre-type" style="display: flex; flex-direction: row; align-items: center;">
             <span class="material-symbols-outlined" style="margin-right: 8px;">
               contract
             </span>
@@ -36,7 +36,7 @@
               </div>
             </ul>
           </div>
-          <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center; margin-left: 20%;">
+          <div class="lieu-offre" style="display: flex; flex-direction: row; align-items: center; ">
             <span class="material-symbols-outlined" style="margin-right: 8px;"> Today</span>
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-group-item-custom">{{ offre.date }}</li>
@@ -60,10 +60,11 @@
     </div>
   </div>
   <app-map [nameCity]="offre.emplacement" [location]="offre.emplacement_exact"></app-map>
-  <div *ngIf="user?.isRecruteur && user?.id == offre.recruteur_ID">
-    <h3 class="title" *ngIf="candidatures.length > 0">Les candidatures à cette offre</h3>
-    <div class="row row-cols-auto">
-      <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature" class="m-3"></app-candidature-full>
-    </div>
-  </div>
+  
 </div>
+<div *ngIf="user?.isRecruteur && user?.id == offre.recruteur_ID" style="display: flex; align-items: center; flex-direction: column;">
+    <h3 class="title candidat-offre" *ngIf="candidatures.length > 0">Les candidatures à cette offre</h3>
+      <div class="row row-cols-auto candidature-offre">
+        <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature" class="m-3"></app-candidature-full>
+  </div>
+  </div>

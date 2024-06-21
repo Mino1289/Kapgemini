@@ -37,7 +37,6 @@
     gap: 16px;
     white-space: nowrap; /* Empêcher le retour à la ligne des éléments flex */
     -webkit-overflow-scrolling: touch; /* Améliorer le défilement sur les appareils mobiles */
-    display: flex;
     animation: scrollAnimation 50s linear infinite alternate ; /* Animation de défilement horizontal */
 }
 

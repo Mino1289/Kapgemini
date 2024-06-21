@@ -1,10 +1,10 @@
 <div class="container">
     <div>
-        <h2 class="title">Bonjour, {{user?.prenom}}</h2>
+        <h2 class="title text-center">Bonjour, {{user?.prenom}}</h2>
     </div>
     <div *ngIf="!user?.isRecruteur; else isRecruteurBlock">        
         <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
-            <h3 class="title">Vos candidatures</h3>
+            <h3 class="title">Vos candidatures:</h3>
             <div class="row row-cols-auto" style="display: flex; justify-content: center;">
                 <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
                 class="m-3"></app-candidature-full>

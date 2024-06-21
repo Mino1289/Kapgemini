@@ -217,7 +217,7 @@
       "isRecruteur": true
     },
     {
-      "id": 0,
+      "id": "0",
       "nom": "Rey",
       "prenom": "Théo",
       "email": "reytheopro@gmail.com",
@@ -316,7 +316,7 @@
       "domaine": "Service Client"
     },
     {
-      "id": 11,
+      "id": "11",
       "nom": "Google",
       "nombre_employe": 72000,
       "emplacement": "Mountain View",
@@ -326,7 +326,7 @@
   ],
   "offres": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "Ingénieur Environnement",
       "contrat": 2,
       "emplacement": "Lyon",
@@ -337,7 +337,7 @@
       "entreprise_ID": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "titre": "Responsable Ressources Humaines",
       "contrat": 2,
       "emplacement": "Bordeaux",
@@ -348,7 +348,7 @@
       "entreprise_ID": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "titre": "Chercheur en IA",
       "contrat": 2,
       "emplacement": "Nice",
@@ -359,7 +359,7 @@
       "entreprise_ID": 3
     },
     {
-      "id": 4,
+      "id": "4",
       "titre": "Agent de Sécurité",
       "contrat": 3,
       "emplacement": "Toulouse",
@@ -370,7 +370,7 @@
       "entreprise_ID": 4
     },
     {
-      "id": 5,
+      "id": "5",
       "titre": "Acheteur Industriel",
       "contrat": 2,
       "emplacement": "Marseille",
@@ -381,7 +381,7 @@
       "entreprise_ID": 5
     },
     {
-      "id": 6,
+      "id": "6",
       "titre": "Assistant Ressources Humaines",
       "contrat": 1,
       "emplacement": "Nantes",
@@ -392,7 +392,7 @@
       "entreprise_ID": 6
     },
     {
-      "id": 7,
+      "id": "7",
       "titre": "Technicien de Maintenance",
       "contrat": 2,
       "emplacement": "Montpellier",
@@ -403,7 +403,7 @@
       "entreprise_ID": 7
     },
     {
-      "id": 8,
+      "id": "8",
       "titre": "Logisticien",
       "contrat": 3,
       "emplacement": "Strasbourg",
@@ -414,7 +414,7 @@
       "entreprise_ID": 8
     },
     {
-      "id": 9,
+      "id": "9",
       "titre": "Chargé de Recrutement",
       "contrat": 2,
       "emplacement": "Rennes",
@@ -425,7 +425,7 @@
       "entreprise_ID": 9
     },
     {
-      "id": 10,
+      "id": "10",
       "titre": "Responsable Service Client",
       "contrat": 2,
       "emplacement": "Lille",
@@ -436,7 +436,7 @@
       "entreprise_ID": 10
     },
     {
-      "id": 11,
+      "id": "11",
       "titre": "Ingénieur informatique",
       "contrat": 2,
       "emplacement": "Grenoble",
@@ -447,7 +447,7 @@
       "entreprise_ID": 5
     },
     {
-      "id": 12,
+      "id": "12",
       "titre": "offre de stage",
       "contrat": 1,
       "emplacement": "Metz",
@@ -460,7 +460,7 @@
   ],
   "candidatures": [
     {
-      "id": 1,
+      "id": "1",
       "candidat_ID": 3,
       "offre_ID": 2,
       "recruteur_ID": 24,
@@ -468,7 +468,7 @@
       "status": 2
     },
     {
-      "id": 2,
+      "id": "2",
       "candidat_ID": 7,
       "offre_ID": 4,
       "recruteur_ID": 24,
@@ -476,7 +476,7 @@
       "status": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "candidat_ID": 1,
       "offre_ID": 5,
       "recruteur_ID": 24,
@@ -484,7 +484,7 @@
       "status": 2
     },
     {
-      "id": 4,
+      "id": "4",
       "candidat_ID": 10,
       "offre_ID": 8,
       "recruteur_ID": 24,
@@ -492,7 +492,7 @@
       "status": 1
     },
     {
-      "id": 5,
+      "id": "5",
       "candidat_ID": 6,
       "offre_ID": 10,
       "recruteur_ID": 24,
@@ -500,7 +500,7 @@
       "status": 3
     },
     {
-      "id": 6,
+      "id": "6",
       "candidat_ID": 21,
       "offre_ID": 3,
       "recruteur_ID": 24,
@@ -508,7 +508,7 @@
       "status": 2
     },
     {
-      "id": 7,
+      "id": "7",
       "candidat_ID": 21,
       "offre_ID": 10,
       "recruteur_ID": 24,
@@ -516,7 +516,7 @@
       "status": 2
     },
     {
-      "id": 8,
+      "id": "8",
       "candidat_ID": 21,
       "offre_ID": 10,
       "recruteur_ID": 24,
@@ -524,7 +524,7 @@
       "status": 3
     },
     {
-      "id": 9,
+      "id": "9",
       "candidat_ID": 21,
       "offre_ID": 3,
       "recruteur_ID": 24,
@@ -532,15 +532,7 @@
       "status": 1
     },
     {
-      "id": 10,
-      "candidat_ID": 21,
-      "offre_ID": 3,
-      "recruteur_ID": 24,
-      "date": "2024-06-15",
-      "status": 3
-    },
-    {
-      "id": 11,
+      "id": "10",
       "candidat_ID": 21,
       "offre_ID": 3,
       "recruteur_ID": 24,
@@ -548,7 +540,15 @@
       "status": 3
     },
     {
-      "id": 12,
+      "id": "11",
+      "candidat_ID": 21,
+      "offre_ID": 3,
+      "recruteur_ID": 24,
+      "date": "2024-06-15",
+      "status": 3
+    },
+    {
+      "id": "12",
       "candidat_ID": 21,
       "offre_ID": 3,
       "recruteur_ID": 23,
@@ -556,7 +556,7 @@
       "status": 1
     },
     {
-      "id": 13,
+      "id": "13",
       "candidat_ID": 21,
       "offre_ID": 3,
       "recruteur_ID": 23,
@@ -564,7 +564,7 @@
       "status": 1
     },
     {
-      "id": 26,
+      "id": "26",
       "candidat_ID": 22,
       "offre_ID": 9,
       "recruteur_ID": 24,
@@ -572,11 +572,19 @@
       "status": 1
     },
     {
-      "id": 27,
+      "id": "27",
       "candidat_ID": "21",
       "offre_ID": "11",
       "recruteur_ID": 24,
       "date": "2024-06-20",
+      "status": 3
+    },
+    {
+      "id": 0,
+      "candidat_ID": "0",
+      "offre_ID": "10",
+      "recruteur_ID": 20,
+      "date": "2024-06-21",
       "status": 1
     }
   ]
