@@ -1,7 +1,7 @@
 <div class="container profile-container">
     <div class="header">
         <h2 class="title">Bonjour, {{user?.prenom}}</h2>
-        <img class="avatar rounded-pill" src="{{user?.profil_picture}}" alt="Avatar de {{user?.prenom}}">
+        <img class="avatar rounded-pill" *ngIf="user?.profil_picture" src="{{user?.profil_picture}}" alt="Avatar de {{user?.prenom}}">
     </div>
     <div class="content" *ngIf="!user?.isRecruteur; else isRecruteurBlock">        
         <div class="candidatures-section" *ngIf="candidatures.length > 0; else noCandidatureBlock">
@@ -22,7 +22,6 @@
             <div class = "btn-ofrr">
             <button class="btn btn-success" routerLink="/ajouter-offre">Publier une offre</button>
             </div>
-            <h3 class="title" style="margin-top:10px; margin-bottom:10px">Les candidatures</h3>
             <div class="candidatures-recruteur" *ngIf="candidatures.length > 0; else noOffreToManage">
                 <h3 class="title">Les candidatures à vos offres d'emplois</h3>
                 <div class="candidatures-list">
@@ -34,7 +33,7 @@
                     <p>Personne n'a encore candidaté à une de vos offres.</p>
                 </div>
             </ng-template>
-            <h3 class="title">Vos offres d'emplois</h3>
+            <h3 class="title mt-3">Vos offres d'emplois</h3>
             <div class="offres-list">
                 <app-offre *ngFor="let offre of offres" [offre]="offre" class="offre-card"></app-offre>
             </div>
