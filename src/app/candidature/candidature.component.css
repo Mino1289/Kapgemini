@@ -29,11 +29,11 @@
 }
 
 #modal-button{
-    background-color: #408cc4;
+    background-color: #4bb76c;
 }
 
 .btn-info {
-    background-color: #408cc4;
+    background-color: #48bd69;
     border: none;
     border-radius: 50px;
     padding: 0.75rem 1.5rem;
@@ -43,6 +43,6 @@
     margin: 0 auto;
 }
 .btn-info:hover {
-    background-color: #53b7ff;
+    background-color: #004508;
     transform: translateY(-2px);
 }

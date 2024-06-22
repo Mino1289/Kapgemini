@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: rgb(245, 245, 245);
-    padding-bottom: 30px; /* Ajuste cette valeur selon la hauteur de ton footer */
     background-image: url('./assets/fond.jpg');
     /* Autres propriétés de style facultatives */
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
-    background-position: center; /* Centre l'image dans l'élément */
+    background-size:auto; /* Ajuste la taille de l'image pour couvrir toute la zone */
     background-repeat: no-repeat;
 }
 

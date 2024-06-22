@@ -1,45 +1,43 @@
-<div class="container">
-    <div>
-        <h2 class="title text-center">Bonjour, {{user?.prenom}}</h2>
+<div class="container profile-container">
+    <div class="header">
+        <h2 class="title">Bonjour, {{user?.prenom}}</h2>
+        <img class="avatar rounded-pill" src="{{user?.profil_picture}}" alt="Avatar de {{user?.prenom}}">
     </div>
-    <div *ngIf="!user?.isRecruteur; else isRecruteurBlock">        
-        <div class="m-3" *ngIf="candidatures.length > 0; else noCandidatureBlock">
-            <h3 class="title">Vos candidatures:</h3>
-            <div class="row row-cols-auto" style="display: flex; justify-content: center;">
-                <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
-                class="m-3"></app-candidature-full>
+    <div class="content" *ngIf="!user?.isRecruteur; else isRecruteurBlock">        
+        <div class="candidatures-section" *ngIf="candidatures.length > 0; else noCandidatureBlock">
+            <h3 class="title">Vos candidatures</h3>
+            <div class="candidatures-list">
+                <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature" class="candidature-card"></app-candidature-full>
             </div>
         </div>
         <ng-template #noCandidatureBlock>
-            <br>
-            Vous n'avez pas encore candidaté à une offre. <br><br>
-            <button class="btn btn-primary" (click)="goToOffres()">
-                Voir les offres
-            </button>
+            <div class="no-candidature">
+                <p>Vous n'avez pas encore candidaté à une offre.</p>
+                <button class="btn btn-primary" (click)="goToOffres()">Voir les offres</button>
+            </div>
         </ng-template>
     </div>
     <ng-template #isRecruteurBlock>
-        <div class="m-3">
-            <button class="btn btn-primary" routerLink="/ajouter-offre">Publier une offre</button>
-        </div>
-        <div class="m-3" *ngIf="candidatures.length > 0; else noOffreToManage">
-            <h3 class="title">Les candidatures à vos offres d'emplois</h3>
-            <div class="row row-cols-auto" style="display: flex; justify-content: center;">
-                <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature"
-                class="m-3"></app-candidature-full>
+        <div class="recruteur-section">
+            <div class = "btn-ofrr">
+            <button class="btn btn-success" routerLink="/ajouter-offre">Publier une offre</button>
+            </div>
+            <h3 class="title" style="margin-top:10px; margin-bottom:10px">Les candidatures</h3>
+            <div class="candidatures-recruteur" *ngIf="candidatures.length > 0; else noOffreToManage">
+                <h3 class="title">Les candidatures à vos offres d'emplois</h3>
+                <div class="candidatures-list">
+                    <app-candidature-full *ngFor="let candidature of candidatures" [candidature]="candidature" class="candidature-card"></app-candidature-full>
+                </div>
+            </div>
+            <ng-template #noOffreToManage>
+                <div class="no-offres">
+                    <p>Personne n'a encore candidaté à une de vos offres.</p>
+                </div>
+            </ng-template>
+            <h3 class="title">Vos offres d'emplois</h3>
+            <div class="offres-list">
+                <app-offre *ngFor="let offre of offres" [offre]="offre" class="offre-card"></app-offre>
             </div>
         </div>
-        <ng-template #noOffreToManage>
-            <br>
-            Personne n'a encore candidaté à une de vos offres. <br><br>
-            <button class="btn btn-primary" routerLink="/ajouter-offre">
-                Publier une offre
-            </button>
-        </ng-template>
-        <h3 class="title">Vos offres d'emplois</h3>
-        <div class="row row-cols-auto" style="display: flex; justify-content: center;">
-            <app-offre *ngFor="let offre of offres" [offre]="offre" class="m-3"></app-offre>
-        </div>
     </ng-template>
-        
 </div>

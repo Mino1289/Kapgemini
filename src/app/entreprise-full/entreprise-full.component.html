@@ -1,14 +1,18 @@
-<div class="card" style="width: 18rem; height: 100%;">
-    <div class="card-body">
-        <h4 class="card-title">{{entreprise.nom}}</h4>
-        <p>{{entreprise.domaine}}</p>
-        <p>{{entreprise.emplacement_exact}}</p>
-        <p>{{entreprise.nombre_employe}} employés</p>
+<div class="container d-flex flex-column align-items-center" style="min-height: 100vh; justify-content: center;">
+    <div class="test">
+        <div class="card" style="width: 18rem; height: 100%; margin-left: 10px;">
+            <div class="card-body">
+                <h4 class="card-title">{{entreprise.nom}}</h4>
+                <p>{{entreprise.domaine}}</p>
+                <p>{{entreprise.emplacement_exact}}</p>
+                <p>{{entreprise.nombre_employe}} employés</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2 style="color: rgb(104, 206, 116); background-color: aliceblue; border-radius: 15px;padding: 5px;">Offres</h2>
+    </div>
+    <div class="row row-cols-auto row-gap-3  justify-content-center" style="margin-bottom: 2rem;">
+        <app-offre *ngFor="let offre of offres" [offre]="offre"></app-offre>
     </div>
 </div>
-
-<div class="row row-cols-auto">
-    <app-offre *ngFor="let offre of offres" [offre]="offre"></app-offre>
-</div>
-
-<app-map [nameCity]="entreprise.emplacement" [location]="entreprise.emplacement_exact"></app-map>

@@ -240,7 +240,7 @@
       "id": "1",
       "nom": "Lesage",
       "nombre_employe": 96,
-      "emplacemment": "Lyon",
+      "emplacement": "Lyon",
       "emplacement_exact": "10 Rue de la République, 69001 Lyon",
       "domaine": "Environnement"
     },
@@ -248,7 +248,7 @@
       "id": "2",
       "nom": "Humbert",
       "nombre_employe": 773,
-      "emplacemment": "Bordeaux",
+      "emplacement": "Bordeaux",
       "emplacement_exact": "15 Cours de l'Intendance, 33000 Bordeaux",
       "domaine": "Ressources Humaines"
     },
@@ -256,7 +256,7 @@
       "id": "3",
       "nom": "Pires",
       "nombre_employe": 890,
-      "emplacemment": "Nice",
+      "emplacement": "Nice",
       "emplacement_exact": "20 Avenue Jean Médecin, 06000 Nice",
       "domaine": "Recherche et Développement"
     },
@@ -264,7 +264,7 @@
       "id": "4",
       "nom": "Payet Rolland SARL",
       "nombre_employe": 645,
-      "emplacemment": "Toulouse",
+      "emplacement": "Toulouse",
       "emplacement_exact": "5 Place du Capitole, 31000 Toulouse",
       "domaine": "Sécurité"
     },
@@ -272,7 +272,7 @@
       "id": "5",
       "nom": "Ollivier",
       "nombre_employe": 724,
-      "emplacemment": "Marseille",
+      "emplacement": "Marseille",
       "emplacement_exact": "25 Boulevard de la Libération, 13001 Marseille",
       "domaine": "Achat"
     },
@@ -280,14 +280,15 @@
       "id": "6",
       "nom": "Chauveau",
       "nombre_employe": 208,
-      "emplacemment": "Nantes",
+      "emplacement": "Nantes",
+      "emplacement_exact": "",
       "domaine": "Ressources Humaines"
     },
     {
       "id": "7",
       "nom": "Joly Hernandez S.A.R.L.",
       "nombre_employe": 927,
-      "emplacemment": "Montpellier",
+      "emplacement": "Montpellier",
       "emplacement_exact": "35 Rue de l'Aiguillerie, 34000 Montpellier",
       "domaine": "Maintenance"
     },
@@ -295,7 +296,7 @@
       "id": "8",
       "nom": "Lemoine SA",
       "nombre_employe": 337,
-      "emplacemment": "Strasbourg",
+      "emplacement": "Strasbourg",
       "emplacement_exact": "40 Grand'Rue, 67000 Strasbourg",
       "domaine": "Logistique"
     },
@@ -303,7 +304,7 @@
       "id": "9",
       "nom": "Dupuy Gaillard S.A.R.L.",
       "nombre_employe": 225,
-      "emplacemment": "Rennes",
+      "emplacement": "Rennes",
       "emplacement_exact": "45 Rue Saint-Georges, 35000 Rennes",
       "domaine": "Ressources Humaines"
     },
@@ -311,7 +312,7 @@
       "id": "10",
       "nom": "Turpin",
       "nombre_employe": 164,
-      "emplacemment": "Lille",
+      "emplacement": "Lille",
       "emplacement_exact": "50 Rue Faidherbe, 59800 Lille",
       "domaine": "Service Client"
     },
@@ -456,6 +457,17 @@
       "date": "2024-06-19",
       "recruteur_ID": 24,
       "entreprise_ID": 2
+    },
+    {
+      "id": 13,
+      "titre": "Test",
+      "contrat": "2",
+      "emplacement": "Paris",
+      "emplacement_exact": "40 rue Gustave 90781 Jean",
+      "description": "TES",
+      "date": "2024-06-22",
+      "recruteur_ID": "11",
+      "entreprise_ID": "4"
     }
   ],
   "candidatures": [
@@ -585,6 +597,46 @@
       "offre_ID": "10",
       "recruteur_ID": 20,
       "date": "2024-06-21",
+      "status": 1
+    },
+    {
+      "id": 28,
+      "candidat_ID": "1",
+      "offre_ID": 12,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 29,
+      "candidat_ID": "10",
+      "offre_ID": 1,
+      "recruteur_ID": 11,
+      "date": "2024-06-22",
+      "status": 2
+    },
+    {
+      "id": 30,
+      "candidat_ID": "10",
+      "offre_ID": 12,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 31,
+      "candidat_ID": "10",
+      "offre_ID": 11,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 32,
+      "candidat_ID": "10",
+      "offre_ID": 6,
+      "recruteur_ID": 16,
+      "date": "2024-06-22",
       "status": 1
     }
   ]
