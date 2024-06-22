@@ -30,7 +30,7 @@
                 {{offre.date}}</li>
         </ul>
             </div>
-            <div class="button-offre-component" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="button-offre-component" style="display: flex; flex-direction: column;">
         <a class="btn btn-primary" *ngIf="!alreadyApplied && !user?.isRecruteur; else elseBlock" (click)="apply()">Candidature</a>
         <ng-template #elseBlock>
 
