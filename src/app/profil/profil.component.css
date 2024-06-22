@@ -1,3 +1,76 @@
+.profile-container {
+    padding: 20px;
+    background-color: #4f9064c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .title {
-    color: white;
+    color: #333;
+    font-weight: bold;
+}
+
+.content, .recruteur-section {
+    padding: 20px;
+    background-color: #388e4882;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.candidatures-section, .candidatures-recruteur, .offres-list {
+    margin-top: 20px;
+    
+}
+
+.candidatures-list, .offres-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.candidature-card, .offre-card {
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+}
+
+.no-candidature, .no-offres {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.no-candidature p, .no-offres p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.btn-ofrr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.recruteur-section{
+    background-color: #4f9064e8;
 }

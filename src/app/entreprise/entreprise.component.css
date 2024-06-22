@@ -17,3 +17,24 @@
     font-size: 0.9rem;
     color: #555;
 }
+
+.custom-btn {
+    background-color: #289746; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 25px; 
+    transition: background-color 0.3s, transform 0.3s; 
+  
+    &:hover {
+      background-color: #003704; 
+      transform: scale(1.05); 
+    }
+  
+    &:focus {
+      outline: none; 
+      box-shadow: 0 0 5px rgba(0, 90, 12, 0.5); 
+    }
+  }
+

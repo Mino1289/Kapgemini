@@ -1,6 +1,6 @@
 <div class="container">
 
-    <form (ngSubmit)="ajouterOffre()" class="row g-3 mt-3 p-4 bg-light border rounded shadow-sm">
+    <form (ngSubmit)="ajouterOffre()" class="row g-3 mt-3 p-4 bg-light border rounded shadow-sm form-container">
         <h1 class="text-center mb-4">Publier une offre</h1>
 
         <div *ngIf="successMessage" class="alert alert-success">
@@ -33,13 +33,13 @@
         </div>
 
         <div class="col-md-6">
-            <label for="inputEmplacement" class="form-label">Adresse complete</label>
-            <input type="text" class="form-control" id="inputEmplacement" placeholder="x Rue de Machin, 12340 Ville, Pays" name="emplacement" [(ngModel)]="offre.emplacement_exact">
+            <label for="inputEmplacementExact" class="form-label">Adresse complète</label>
+            <input type="text" class="form-control" id="inputEmplacementExact" placeholder="x Rue de Machin, 12340 Ville, Pays" name="emplacement" [(ngModel)]="offre.emplacement_exact">
         </div>
 
         <div class="col-md-6">
             <label for="inputDescription" class="form-label">Description</label>
-            <textarea class="form-control" id="inputDescription" placeholder="Au sein de l'équipe, vous serez amener à..." name="description" [(ngModel)]="offre.description"></textarea>
+            <textarea class="form-control" id="inputDescription" placeholder="Au sein de l'équipe, vous serez amené à..." name="description" [(ngModel)]="offre.description"></textarea>
         </div>
 
         <div class="col-md-6">
@@ -51,7 +51,7 @@
         </div>
 
         <div class="col-12 d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">Ajouter l'offre</button>
+            <button type="submit" class="btn ">Ajouter l'offre</button>
         </div>
     </form>
 </div>

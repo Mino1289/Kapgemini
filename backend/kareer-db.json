@@ -324,7 +324,7 @@
       "emplacement_exact": "Googleplex, 1600 Amphitheatre Pkwy, Mountain View, CA 94043, États-Unis",
       "domaine": "Logiciel"
     }
-],
+  ],
   "offres": [
     {
       "id": 1,
@@ -457,6 +457,17 @@
       "date": "2024-06-19",
       "recruteur_ID": 24,
       "entreprise_ID": 2
+    },
+    {
+      "id": 13,
+      "titre": "Test",
+      "contrat": "2",
+      "emplacement": "Paris",
+      "emplacement_exact": "40 rue Gustave 90781 Jean",
+      "description": "TES",
+      "date": "2024-06-22",
+      "recruteur_ID": "11",
+      "entreprise_ID": "4"
     }
   ],
   "candidatures": [
@@ -578,6 +589,46 @@
       "offre_ID": "11",
       "recruteur_ID": 24,
       "date": "2024-06-20",
+      "status": 1
+    },
+    {
+      "id": 28,
+      "candidat_ID": "1",
+      "offre_ID": 12,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 29,
+      "candidat_ID": "10",
+      "offre_ID": 1,
+      "recruteur_ID": 11,
+      "date": "2024-06-22",
+      "status": 2
+    },
+    {
+      "id": 30,
+      "candidat_ID": "10",
+      "offre_ID": 12,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 31,
+      "candidat_ID": "10",
+      "offre_ID": 11,
+      "recruteur_ID": 24,
+      "date": "2024-06-22",
+      "status": 1
+    },
+    {
+      "id": 32,
+      "candidat_ID": "10",
+      "offre_ID": 6,
+      "recruteur_ID": 16,
+      "date": "2024-06-22",
       "status": 1
     }
   ]
